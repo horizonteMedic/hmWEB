@@ -33,10 +33,10 @@ public class AuthService {
 
     public AuthResponse login(LoginRequest request) {
         System.out.println("EL REQUEST ES: "+request);
-        Optional<User> userd=usuarioRepository.busquedaNombre(request.getNombre());
+        Optional<User> userd=usuarioRepository.findByUsername(request.getNombre());
         System.out.println("EL userd ES: "+userd);
 
-        UserDetails user=usuarioRepository.busquedaNombre(request.getNombre()).orElseThrow();
+        UserDetails user=usuarioRepository.findByUsername(request.getNombre()).orElseThrow();
 
         System.out.println("el usuario es:"+user);
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getNombre(), request.getPassword()));

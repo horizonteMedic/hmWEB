@@ -6,8 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repository
 public interface UserRepository extends JpaRepository<User,Long> {
-    @Query(value = "SELECT * FROM users WHERE username=:nombre;", nativeQuery=true)
-    Optional<User> busquedaNombre(String nombre);
+   // @Query(value = "SELECT * FROM users WHERE username=:nombre;", nativeQuery=true)
+    Optional<User> findByUsername(String username);
 }
