@@ -1,5 +1,6 @@
-package hmDeveloper.developerHm.models.entity;
+package hmDeveloper.developerHm.auth.user;
 
+import hmDeveloper.developerHm.models.entity.Empleado;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,16 +18,15 @@ import java.util.List;
 @Data
 @Builder
 @Entity
-@Table(name = "usuario", uniqueConstraints ={@UniqueConstraint(columnNames = {"username"})})
-public class Usuario implements UserDetails {
-   // private static final long serialVersionUID = 1L;
+@Table(name = "users", uniqueConstraints ={@UniqueConstraint(columnNames = {"username"})})
+public class User implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_user")
     private long idUser;
 
     @Column(name = "username", nullable = false)
-    private String userName;
+    private String username;
 
     private String password;
 
@@ -37,21 +37,11 @@ public class Usuario implements UserDetails {
     //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Empleado empleado;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "id_user",referencedColumnName = "id_user"),
-            inverseJoinColumns = @JoinColumn(name = "id_rol", referencedColumnName = "id_rol"),
-            uniqueConstraints = {@UniqueConstraint(columnNames = { "id_user", "id_rol" }) })
-    private List<Rol> rol;
-
-
+    @Enumerated(EnumType.STRING)
+    Role role;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("user"));
-    }
-
-    @Override
-    public String getUsername() {
-        return null;
+        return List.of(new SimpleGrantedAuthority(role.name()));
     }
 
     @Override

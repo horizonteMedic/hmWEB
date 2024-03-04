@@ -68,13 +68,45 @@ public class EmpleadoServiceImpl implements IEmpleadoService{
 
     //convierte entidad a DTO
     private EmpleadoDTO mapearDTO(Empleado empleado){
-        EmpleadoDTO empleadoDTO=modelMapper.map(empleado, EmpleadoDTO.class);
+        EmpleadoDTO empleadoDTO=new EmpleadoDTO();
+
+        empleadoDTO.setId(empleado.getId());
+        empleadoDTO.setNombres(empleado.getNombres());
+        empleadoDTO.setApellidos(empleado.getApellidos());
+        empleadoDTO.setCargo(empleado.getCargo());
+        empleadoDTO.setCelular(empleado.getCelular());
+        empleadoDTO.setEstado(empleado.getEstado());
+        empleadoDTO.setDireccion(empleado.getDireccion());
+        empleadoDTO.setCorreoElect(empleado.getCorreoElect());
+        empleadoDTO.setNumDocumento(empleado.getNumDocumento());
+        empleadoDTO.setTelFijo(empleado.getTelFijo());
+        empleadoDTO.setFechaRegistro(empleado.getFechaRegistro());
+        empleadoDTO.setUserRegistro(empleado.getUserRegistro());
+        empleadoDTO.setUserActualizacion(empleado.getUserActualizacion());
+        empleadoDTO.setUserActualizacion(empleado.getUserActualizacion());
+
         return empleadoDTO;
     }
 
     //convierte DTO a Entidad
     private Empleado mapearEntidad(EmpleadoDTO empleadoDTO){
-        Empleado empleado=modelMapper.map(empleadoDTO, Empleado.class);
+        Empleado empleado=new Empleado();
+
+        empleado.setNombres(empleadoDTO.getNombres());
+        empleado.setApellidos(empleadoDTO.getApellidos());
+        empleado.setCargo(empleadoDTO.getCargo());
+        empleado.setCelular(empleadoDTO.getCelular());
+        empleado.setEstado(empleadoDTO.getEstado());
+        empleado.setDireccion(empleadoDTO.getDireccion());
+        empleado.setCorreoElect(empleadoDTO.getCorreoElect());
+        empleado.setNumDocumento(empleadoDTO.getNumDocumento());
+        empleado.setTelFijo(empleadoDTO.getTelFijo());
+        empleado.setFechaRegistro(empleadoDTO.getFechaRegistro());
+        empleado.setUserRegistro(empleadoDTO.getUserRegistro());
+        empleado.setUserActualizacion(empleadoDTO.getUserActualizacion());
+        empleado.setUserActualizacion(empleadoDTO.getUserActualizacion());
+
+
         return empleado;
     }
 
