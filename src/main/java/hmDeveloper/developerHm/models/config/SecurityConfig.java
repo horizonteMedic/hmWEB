@@ -28,7 +28,7 @@ public class SecurityConfig {
                                 .disable())
                 .authorizeHttpRequests(authRequest ->
                         authRequest
-                                .requestMatchers("/api/v01/**").permitAll()
+                                .requestMatchers("/api/v01/st/**").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .sessionManagement(sessionManager->

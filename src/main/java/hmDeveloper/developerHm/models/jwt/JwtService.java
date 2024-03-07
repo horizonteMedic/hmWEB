@@ -1,4 +1,4 @@
-package hmDeveloper.developerHm.auth;
+package hmDeveloper.developerHm.models.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

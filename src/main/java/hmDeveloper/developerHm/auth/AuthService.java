@@ -1,10 +1,11 @@
 package hmDeveloper.developerHm.auth;
 
 import hmDeveloper.developerHm.auth.user.Role;
-import hmDeveloper.developerHm.auth.user.User;
 import hmDeveloper.developerHm.auth.user.UserRepository;
 import hmDeveloper.developerHm.models.dtos.EmpleadoDTO;
 import hmDeveloper.developerHm.models.entity.Empleado;
+import hmDeveloper.developerHm.models.entity.Usuario;
+import hmDeveloper.developerHm.models.jwt.JwtService;
 import hmDeveloper.developerHm.models.services.EmpleadoServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,7 @@ public class AuthService {
 
     public AuthResponse login(LoginRequest request) {
         System.out.println("EL REQUEST ES: "+request);
-        Optional<User> userd=usuarioRepository.findByUsername(request.getNombre());
+        Optional<Usuario> userd=usuarioRepository.findByUsername(request.getNombre());
         System.out.println("EL userd ES: "+userd);
 
         UserDetails user=usuarioRepository.findByUsername(request.getNombre()).orElseThrow();
@@ -52,7 +53,7 @@ public class AuthService {
     }
 
     public AuthResponse register(RegisterRequest request) {
-        User usuario=new User();
+        Usuario usuario=new Usuario();
         EmpleadoDTO empleadoDTO=new EmpleadoDTO();
         usuario.setUsername(request.getUsername());
         usuario.setEstado(request.getEstado());

@@ -1,5 +1,6 @@
 package hmDeveloper.developerHm.models.entity;
 
+import hmDeveloper.developerHm.auth.user.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,11 +27,14 @@ public class Usuario implements UserDetails {
     private long idUser;
 
     @Column(name = "username", nullable = false)
-    private String userName;
+    private String username;
 
     private String password;
 
     private Boolean estado;
+
+    @Enumerated(EnumType.STRING)
+    Role role;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_empleado", nullable = false)
@@ -46,12 +50,7 @@ public class Usuario implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("user"));
-    }
-
-    @Override
-    public String getUsername() {
-        return null;
+     return List.of(new SimpleGrantedAuthority(role.name()));
     }
 
     @Override
