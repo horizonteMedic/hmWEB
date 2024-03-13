@@ -3,8 +3,7 @@ package hmDeveloper.developerHm.models.services;
 import hmDeveloper.developerHm.models.dtos.EmpleadoDTO;
 import hmDeveloper.developerHm.models.entity.Empleado;
 import hmDeveloper.developerHm.models.errors.ResourceNotFoundException;
-import hmDeveloper.developerHm.models.repository.IEmpeadoRepository;
-import org.modelmapper.ModelMapper;
+import hmDeveloper.developerHm.models.repository.IEmpleadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,9 +14,7 @@ import java.util.stream.Collectors;
 public class EmpleadoServiceImpl implements IEmpleadoService{
 
     @Autowired
-    private IEmpeadoRepository empleadoRepository;
-
-    private ModelMapper modelMapper;
+    private IEmpleadoRepository empleadoRepository;
 
     @Override
     public EmpleadoDTO crearEmpleado(EmpleadoDTO empleadoDTO) {
