@@ -52,6 +52,7 @@ public class EmpleadoController {
     public ResponseEntity<String> eliminarEmpleado(@PathVariable(name = "id") long id) {
         empleadoService.eliminarEmpleado(id);
         json=new JSONObject();
-        return new ResponseEntity<>(json.put("message","Registro Eliminado exitosamente!").toString(),HttpStatus.OK);    }
+        return new ResponseEntity<>(json.put("message","Registro Eliminado exitosamente!").toString(),HttpStatus.OK);
+    }
 
 }
