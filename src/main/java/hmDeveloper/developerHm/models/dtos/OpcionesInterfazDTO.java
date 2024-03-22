@@ -1,5 +1,8 @@
 package hmDeveloper.developerHm.models.dtos;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,34 +15,29 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArchivoServidorDTO {
+public class OpcionesInterfazDTO {
 
     private Long id;
 
-    private Long dni;
+    private String nombre;
 
-    private Long historiaClinica;
-
-    private String rutaArchivo;
-
-    private String nombreArchivo;
-
-    private String servidor;
+    private String descripcion;
 
     private Boolean estado;
+
+    private Long nivel;
+
+    private Long idPadre;
+
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate fechaRegistro;
 
     private String userRegistro;
 
+
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate fechaActualizacion;
 
     private String userActualizacion;
-
-    private long id_tipo_archivo;
-
-    private String fileBase64;
-
 }

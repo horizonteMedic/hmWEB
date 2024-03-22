@@ -33,19 +33,13 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     public AuthResponse login(LoginRequest request) {
-        System.out.println("EL REQUEST ES: "+request);
-        Optional<Usuario> userd=usuarioRepository.findByUsername(request.getNombre());
-        System.out.println("EL userd ES: "+userd);
+        Usuario userd=usuarioRepository.findByUsername(request.getNombre()).orElseThrow();
 
         UserDetails user=usuarioRepository.findByUsername(request.getNombre()).orElseThrow();
 
-        System.out.println("el usuario es:"+user);
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getNombre(), request.getPassword()));
-        System.out.println("paso el autentitacion namager ");
 
-
-
-        String token=jwtService.getToken(user);
+        String token=jwtService.getToken(user,userd.getIdUser());
         return AuthResponse.builder()
                 .token(token)
                 .build();
@@ -63,7 +57,7 @@ public class AuthService {
         usuario.setEmpleado(mapearEntidad(empleadoDTO));
         usuarioRepository.save(usuario);
         return AuthResponse.builder()
-                .token(jwtService.getToken(usuario))
+                .token(jwtService.getToken(usuario,1))
                 .build();
     }
 

@@ -12,19 +12,10 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArchivoServidorDTO {
-
+public class PrivilegioRolDTO {
     private Long id;
 
-    private Long dni;
-
-    private Long historiaClinica;
-
-    private String rutaArchivo;
-
-    private String nombreArchivo;
-
-    private String servidor;
+    private String descripcion;
 
     private Boolean estado;
 
@@ -38,8 +29,7 @@ public class ArchivoServidorDTO {
 
     private String userActualizacion;
 
-    private long id_tipo_archivo;
+    private long id_rol;
 
-    private String fileBase64;
-
+    private long id_opcion_interfaz;
 }

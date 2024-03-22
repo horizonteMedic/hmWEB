@@ -61,6 +61,7 @@ public class RolServiceImpl implements IRolService{
         rolDTO.setUserRegistro(rol.getUserRegistro());
         rolDTO.setFechaActualizacion(rol.getFechaActualizacion());
         rolDTO.setUserActualizacion(rol.getUserActualizacion());
+        rolDTO.setDescripcion(rol.getDescripcion());
 
         return rolDTO;
     }
@@ -74,6 +75,7 @@ public class RolServiceImpl implements IRolService{
         rol.setUserRegistro(rolDTO.getUserRegistro());
         rol.setFechaActualizacion(rolDTO.getFechaActualizacion());
         rol.setUserActualizacion(rolDTO.getUserActualizacion());
+        rol.setDescripcion(rolDTO.getDescripcion());
 
         return rol;
     }
@@ -84,7 +86,7 @@ public class RolServiceImpl implements IRolService{
         rol.setUserRegistro(rolDTO.getUserRegistro());
         rol.setFechaActualizacion(rolDTO.getFechaActualizacion());
         rol.setUserActualizacion(rolDTO.getUserActualizacion());
-
+        rol.setDescripcion(rolDTO.getDescripcion());
         return rol;
     }
 }

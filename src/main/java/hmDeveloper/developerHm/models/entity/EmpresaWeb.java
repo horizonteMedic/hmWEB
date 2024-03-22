@@ -13,20 +13,17 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "rol")
-public class Rol implements Serializable {
-    private static final long serialVersionUID = 1L;
+@Table(name = "empresa_contrata_web")
+public class EmpresaWeb implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id_rol")
-    private long idRol;
+    @Column(name = "id_empresa__contrata_web")
+    private Long id;
 
-    @Column(name = "rol",length = 50)
-    private String nombre;
-
-    @Column(length = 100)
-    private String descripcion;
+    @Column(name = "ruc", length = 11, nullable = false)
+    private String ruc;
 
     private Boolean estado;
 
@@ -45,4 +42,8 @@ public class Rol implements Serializable {
 
     @Column(name = "user_actualizacion", length = 20)
     private String userActualizacion;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_user", nullable = false)
+    private Usuario usuario;
 }

@@ -32,6 +32,38 @@ public class ArchivoServidorServiceImpl implements IArchivoServidorService {
     private ITipoArchivoRepository tipoArchivoRepository;
 
     @Override
+    public ArchivoServidorDTO detalleArchivoServidor(long hc, long ta) {
+        ArchivosServidor archivosServidor=archivoServidorRepository.detalleArchivoServidor(hc,ta).
+                orElseThrow();
+        System.out.println("El archivo de base 64 : ");
+        String resultService ="";
+        String storageConnectionAzure="DefaultEndpointsProtocol=https;AccountName=fileshm;AccountKey=ATV4bMeYq3Ie5RbJO5rug14qJFXlx4fWeFqXsdUq4xQqjvZTNu9CdJGBcyxEFo+1tVnEsDckzIGV+AStoqla/g==;EndpointSuffix=core.windows.net";
+        String nameContainer="files1";
+        String  base64File="";
+        try {
+            CloudStorageAccount account = CloudStorageAccount.parse(storageConnectionAzure);
+            CloudBlobClient serviceClient = account.createCloudBlobClient();
+            CloudBlobContainer container = serviceClient.getContainerReference(nameContainer);
+            final String NOMBRE_ARCHIVO_TEMP = "temp.pdf";
+
+            CloudBlockBlob blockBlob = container.getBlockBlobReference(archivosServidor.getRutaArchivo());
+            File file = new File(NOMBRE_ARCHIVO_TEMP);
+            blockBlob.downloadToFile(file.getAbsolutePath());
+            byte[] fileContent = Files.readAllBytes(file.toPath());
+            base64File = Base64.getEncoder().encodeToString(fileContent);
+            System.out.println("El archivo de base 64 : "+base64File);
+            resultService = "Download success!!!";
+
+        }catch (Exception e){
+            resultService = e.getMessage();
+        }
+        ArchivoServidorDTO archivoServidorDTO=mapearDTO(archivosServidor);
+        archivoServidorDTO.setFileBase64(base64File);
+
+        return archivoServidorDTO;
+    }
+
+    @Override
     public ArchivoServidorDTO creararchivoServidor(ArchivoServidorDTO archivoServidorDTO) {
         String resultService ="";
         String storageConnectionAzure="DefaultEndpointsProtocol=https;AccountName=fileshm;AccountKey=ATV4bMeYq3Ie5RbJO5rug14qJFXlx4fWeFqXsdUq4xQqjvZTNu9CdJGBcyxEFo+1tVnEsDckzIGV+AStoqla/g==;EndpointSuffix=core.windows.net";

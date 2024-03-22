@@ -22,6 +22,14 @@ public class FileController {
     private static JSONObject json=null;
 
 
+    @GetMapping("/detalleArchivo/{hc}/{ta}")
+    public ResponseEntity<ArchivoServidorDTO> obtenerArchivoDetalle(@PathVariable Long hc, @PathVariable Long ta) {
+        System.out.println("EL HC ES:"+hc);
+        System.out.println("EL TA ES:"+ta);
+        return ResponseEntity.ok(archivoServidorService.detalleArchivoServidor(hc,ta));
+    }
+
+
     @GetMapping()
     public ResponseEntity<List<ArchivoServidorDTO>> obtenerListadoArchivoServidorDTO(){
 

@@ -1,5 +1,7 @@
 package hmDeveloper.developerHm.models.dtos;
 
+import hmDeveloper.developerHm.models.entity.Usuario;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,19 +14,12 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ArchivoServidorDTO {
-
+public class EmpresaWebDTO {
     private Long id;
 
-    private Long dni;
+    private String ruc;
 
-    private Long historiaClinica;
-
-    private String rutaArchivo;
-
-    private String nombreArchivo;
-
-    private String servidor;
+    private String razonSocial;
 
     private Boolean estado;
 
@@ -38,8 +33,6 @@ public class ArchivoServidorDTO {
 
     private String userActualizacion;
 
-    private long id_tipo_archivo;
-
-    private String fileBase64;
+    private Long idUser;
 
 }

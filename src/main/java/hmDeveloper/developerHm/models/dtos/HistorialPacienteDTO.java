@@ -1,6 +1,8 @@
 package hmDeveloper.developerHm.models.dtos;
 
-
+import jakarta.persistence.Column;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,23 +15,14 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class RolDTO {
+public class HistorialPacienteDTO {
 
-    private long idRol;
+    private Long dni;
 
-    private String nombre;
+    private String apellidos;
 
-    private Boolean estado;
-
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate fechaRegistro;
-
-    private String userRegistro;
+    private String nombres;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate fechaActualizacion;
-
-    private String userActualizacion;
-
-    private String descripcion;
+    private LocalDate fechaExamen;
 }
