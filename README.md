@@ -32,5 +32,48 @@ Apis Medsoft Web
     - Metodo: get
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/3
+    - Captura del resultado:
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/bb57a19c-ca7c-4f70-8717-177a65d7aefd)
+2- Usuario
+  - Registro de Usuarios
+    - Metodo: post
+    - Autorizacion: No lo tiene (sin token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/register
+    - Json de ejemplo:
+          {
+            "username":"karlaSofia",
+            "password": "123456",
+            "estado": true,
+            "idEmpleado": 2
+          }
+    - Captura del resultado:
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/583fbbbc-cb3e-495c-9044-2420aefce778)
+- Login
+  - Metodo: post
+  - Autorizacion: No lo tiene (sin token)
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/login
+  - Json de ejemplo:
+      {
+        "nombre":"karlaSofia",
+        "password": "123456"
+      }
+  - Captura del resultado:
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28cccc89-69f9-48db-9e42-7359612e9982)
+  - Nota: Apartir de aca se copiara el token para acceder a todos los servicios.
+-Listado de todos los usuarios
+  - Metodo: get
+  - Autorizacion: Si lo tiene (Con token)
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario
+  - Captura de ejemplo:
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8b525572-b930-417f-9527-2b68c97cb323)
+- Listado de los usuarios por id
+  - Metodo: get
+  - Autorizacion: Si lo tiene (Con token)
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/1
+  - Captura de ejemplo:
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6d3d0014-fa9a-48d3-b831-ab887fcffa01)
+
+    
+
+
 
