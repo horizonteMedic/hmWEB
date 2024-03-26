@@ -5,6 +5,7 @@ Apis Medsoft Web
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado
     - Json de ejemplo:
+      
         {
           "nombres":"karla sofia",
           "apellidos": "ramirez aguilar",
@@ -20,6 +21,7 @@ Apis Medsoft Web
           "fechaActualizacion": null,
           "userActualizacion": null
         }
+      
     - Captura del resultado:
       
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8cc1dc98-50ea-414f-a3d1-994ab1f9f7e8)
@@ -46,12 +48,14 @@ Apis Medsoft Web
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/register
     - Json de ejemplo:
+      
           {
             "username":"karlaSofia",
             "password": "123456",
             "estado": true,
             "idEmpleado": 2
           }
+      
     - Captura del resultado:
    
       
@@ -61,15 +65,18 @@ Apis Medsoft Web
   - Autorizacion: No lo tiene (sin token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/login
   - Json de ejemplo:
+    
       {
         "nombre":"karlaSofia",
         "password": "123456"
       }
+    
   - Captura del resultado:
  
     
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28cccc89-69f9-48db-9e42-7359612e9982)
   - Nota: Apartir de aca se copiara el token para acceder a todos los servicios.
+    
 -Listado de todos los usuarios
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
