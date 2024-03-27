@@ -7,6 +7,8 @@ Apis Medsoft Web
     - Json de ejemplo:
       
         {
+   
+      
           "nombres":"karla sofia",
           "apellidos": "ramirez aguilar",
           "cargo": "administrativo",
@@ -20,8 +22,10 @@ Apis Medsoft Web
           "userRegistro": "joshue",
           "fechaActualizacion": null,
           "userActualizacion": null
-        }
+   
       
+      }
+
     - Captura del resultado:
       
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8cc1dc98-50ea-414f-a3d1-994ab1f9f7e8)
@@ -50,10 +54,14 @@ Apis Medsoft Web
     - Json de ejemplo:
       
           {
+   
+      
             "username":"karlaSofia",
             "password": "123456",
             "estado": true,
             "idEmpleado": 2
+   
+      
           }
       
     - Captura del resultado:
@@ -67,8 +75,12 @@ Apis Medsoft Web
   - Json de ejemplo:
     
       {
+ 
+    
         "nombre":"karlaSofia",
         "password": "123456"
+ 
+    
       }
     
   - Captura del resultado:
