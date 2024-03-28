@@ -39,7 +39,7 @@ Apis Medsoft Web
   - Listado de empleado por busqueda de ID
     - Metodo: get
     - Autorizacion: No lo tiene (sin token)
-    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/3
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/{id del empleado a buscar}
     - Captura del resultado:
    
       
@@ -82,7 +82,7 @@ Apis Medsoft Web
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28cccc89-69f9-48db-9e42-7359612e9982)
   - Nota: Apartir de aca se copiara el token para acceder a todos los servicios.
     
--Listado de todos los usuarios
+- Listado de todos los usuarios
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario
@@ -93,13 +93,12 @@ Apis Medsoft Web
 - Listado de los usuarios por id
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
-  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/1
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/{id del usaurio a buscar}
   - Captura de ejemplo:
  
     
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6d3d0014-fa9a-48d3-b831-ab887fcffa01)
 
     
-
 
 
