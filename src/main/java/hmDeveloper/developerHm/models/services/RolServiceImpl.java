@@ -89,4 +89,7 @@ public class RolServiceImpl implements IRolService{
         rol.setDescripcion(rolDTO.getDescripcion());
         return rol;
     }
+
+
+
 }

@@ -1,8 +1,6 @@
 package hmDeveloper.developerHm.controller;
 
-import hmDeveloper.developerHm.models.dtos.RolDTO;
 import hmDeveloper.developerHm.models.dtos.UsuarioRolDTO;
-import hmDeveloper.developerHm.models.entity.UsuarioRol;
 import hmDeveloper.developerHm.models.services.IUsuarioRolService;
 import jakarta.validation.Valid;
 import org.json.JSONObject;

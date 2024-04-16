@@ -1,7 +1,6 @@
 package hmDeveloper.developerHm.models.repository;
 
 import hmDeveloper.developerHm.models.entity.DetalleHistoriaClinica;
-import hmDeveloper.developerHm.models.entity.HistorialPaciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

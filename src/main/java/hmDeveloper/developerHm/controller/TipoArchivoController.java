@@ -1,6 +1,5 @@
 package hmDeveloper.developerHm.controller;
 
-import hmDeveloper.developerHm.models.dtos.RolDTO;
 import hmDeveloper.developerHm.models.dtos.TipoArchivoDTO;
 import hmDeveloper.developerHm.models.services.ITipoArchivoService;
 import jakarta.validation.Valid;

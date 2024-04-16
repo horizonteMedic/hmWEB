@@ -2,7 +2,6 @@ package hmDeveloper.developerHm.models.services;
 
 import hmDeveloper.developerHm.models.dtos.OpcionesInterfazDTO;
 import hmDeveloper.developerHm.models.entity.OpcionesInterfazPrivilegios;
-import hmDeveloper.developerHm.models.entity.Rol;
 import hmDeveloper.developerHm.models.errors.ResourceNotFoundException;
 import hmDeveloper.developerHm.models.repository.IOpcionesInterfazPrivilegio;
 import org.springframework.beans.factory.annotation.Autowired;

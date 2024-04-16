@@ -1,7 +1,5 @@
 package hmDeveloper.developerHm.models.dtos;
 
-import hmDeveloper.developerHm.models.entity.Usuario;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,6 +1,5 @@
 package hmDeveloper.developerHm.models.services;
 
-import hmDeveloper.developerHm.models.dtos.RolDTO;
 import hmDeveloper.developerHm.models.dtos.UsuarioDTO;
 
 import java.util.List;
