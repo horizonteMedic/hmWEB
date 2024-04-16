@@ -72,8 +72,8 @@ Apis Medsoft Web
       
           {
       
-            "nombre":"karlaSofia",
-            "password": "123456"
+            "nombre":"developer",
+            "password": "hm123"
       
           }
       
