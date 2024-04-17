@@ -170,3 +170,22 @@ Apis Medsoft Web
     - Captura del resultado:
    
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/65cc74e1-e865-415d-b506-66784cf006e7)
+
+
+  - 3.9 Listado de Parametros
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/listadoParametros
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/cde2840b-87e6-4d40-9069-eb4b328971bf)
+
+    
+  - 3.10 Detalle de parametros por descripcion de lista
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/detalleParametros/detalleParametrizable/Estado Civil
+    - Captura del resultado:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/84b28146-2e9d-4d63-beef-f00358b21478)
+
