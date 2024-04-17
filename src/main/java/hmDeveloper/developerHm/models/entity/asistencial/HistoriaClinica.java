@@ -38,4 +38,6 @@ public class HistoriaClinica implements Serializable {
     private String userRegistro;
 
     private String sede;
+
+
 }
