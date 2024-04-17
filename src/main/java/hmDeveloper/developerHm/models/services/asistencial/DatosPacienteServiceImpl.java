@@ -4,11 +4,13 @@ import hmDeveloper.developerHm.models.dtos.asistencial.DatosPacienteDTO;
 import hmDeveloper.developerHm.models.dtos.asistencial.EmpresaDTO;
 import hmDeveloper.developerHm.models.entity.asistencial.DatosPaciente;
 import hmDeveloper.developerHm.models.entity.asistencial.Empresa;
+import hmDeveloper.developerHm.models.errors.ResourceNotFoundException;
 import hmDeveloper.developerHm.models.repository.asistencial.IDatosPacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class DatosPacienteServiceImpl implements IDatosPacienteService{
@@ -17,27 +19,41 @@ public class DatosPacienteServiceImpl implements IDatosPacienteService{
 
     @Override
     public DatosPacienteDTO crearDatosPaciente(DatosPacienteDTO datosPacienteDTO) {
-        return null;
+        DatosPaciente datosPaciente=mapearEntidad(datosPacienteDTO);
+
+        DatosPaciente nuevoPaciente=datosPacienteRepository.save(datosPaciente);
+        DatosPacienteDTO datosPacienteDTORespuesta=mapearDTO(nuevoPaciente);
+
+        return datosPacienteDTORespuesta;
     }
 
     @Override
     public List<DatosPacienteDTO> listadoContratasDatosPacientes() {
-        return null;
+        List<DatosPaciente> listaDatosPaciente=datosPacienteRepository.findAll();
+        return listaDatosPaciente.stream().map(this::mapearDTO).collect(Collectors.toList());
     }
 
     @Override
     public DatosPacienteDTO obtenerDatosPacientePorNumDoc(String numDoc) {
-        return null;
+        DatosPaciente datosPaciente=datosPacienteRepository.findById(numDoc)
+                .orElseThrow(()-> new ResourceNotFoundException("Datos Paciente","num doc",Long.parseLong(numDoc)));
+        return mapearDTO(datosPaciente);
     }
 
     @Override
     public DatosPacienteDTO actualizarDatosPaciente(DatosPacienteDTO datosPacienteDTO, String numDoc) {
-        return null;
+        DatosPaciente datosPaciente=datosPacienteRepository.findById(numDoc)
+                .orElseThrow(()-> new ResourceNotFoundException("Datos Paciente","num doc",Long.parseLong(numDoc)));
+
+        DatosPaciente datosPacienteActual=datosPacienteRepository.save(actualizarDatosPacienteEntidad(datosPacienteDTO,datosPaciente));
+        return mapearDTO(datosPaciente);
     }
 
     @Override
     public void eliminarDatosPaciente(String numDoc) {
-
+        DatosPaciente datosPaciente=datosPacienteRepository.findById(numDoc)
+                .orElseThrow(()-> new ResourceNotFoundException("Datos Paciente","num doc",Long.parseLong(numDoc)));
+        datosPacienteRepository.delete(datosPaciente);
     }
 
     private DatosPacienteDTO mapearDTO(DatosPaciente datosPaciente){
