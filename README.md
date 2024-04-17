@@ -45,7 +45,9 @@ Apis Medsoft Web
    
       
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/bb57a19c-ca7c-4f70-8717-177a65d7aefd)
+      
 2- Usuario
+
   - Registro de Usuarios
     - Metodo: post
     - Autorizacion: No lo tiene (sin token)
@@ -102,4 +104,69 @@ Apis Medsoft Web
 
     
 
+3- Combobox
 
+  - 3.1 Listado de Departamentos
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/departamento
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6cdda3ab-3edb-4d3c-801e-a13258b4af71)
+
+  - 3.2 Listado de Departamentos por el ubigeo de departamento
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/departamento/23
+    - Captura del resultado:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/458247f2-e9ed-4853-a204-c64fafb6baab)
+
+
+  - 3.3 Listado de Provincias
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/provincia
+    - Captura del resultado:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ca557bed-d7c5-4729-ae7d-ec328dbe6dec)
+
+  - 3.4 Listado de Provincias por el ubigeo provincia
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/provincia/0101
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/29adc6de-b17d-4773-8bc9-eb6e9fc87fa0)
+
+  - 3.5 Listado de Provincias por ubigeo departamento
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/provincia/busqueda-departamento/01
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/94a734a2-0f0e-4796-b173-e04a1341d1de)
+
+  - 3.6 Listado de Distritos
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/distrito
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/a8a7c600-523b-40a0-88fd-78c5a9129244)
+
+  - 3.7 Listado de Distritos por Ubigeo de distrito
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/distrito/010101
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/1ea25344-a9f8-4ea2-8eba-d1264e240b76)
+
+  - 3.8 Listado de Distritos por Ubigeo de provincia
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/distrito/busqueda-distrito-porProvincia/0101
+    - Captura del resultado:
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/65cc74e1-e865-415d-b506-66784cf006e7)
