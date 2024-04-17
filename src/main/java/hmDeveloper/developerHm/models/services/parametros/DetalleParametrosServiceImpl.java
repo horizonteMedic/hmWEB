@@ -38,6 +38,12 @@ public class DetalleParametrosServiceImpl implements IDetalleParametrosService{
     }
 
     @Override
+    public List<DetalleParametrosDTO> listadoDetalleParametrizablePorListaParametros(String descripcionParametro) {
+        List<DetalleParametros> detalleParametros=detalleParametrosRepository.listadoDetalleParametrizable(descripcionParametro).orElseThrow();
+        return detalleParametros.stream().map(this::mapearDTO).collect(Collectors.toList());
+    }
+
+    @Override
     public DetalleParametrosDTO obtenerDetalleParametrosPorID(Long id) {
         DetalleParametros detalleParametros=detalleParametrosRepository.findById(id)
                 .orElseThrow(()-> new ResourceNotFoundException("Detalle de parametros","id",id));

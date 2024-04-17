@@ -28,6 +28,13 @@ public class DetalleParametrosController {
         return ResponseEntity.ok(detalleParametrosService.listadoDetalleParametros());
     }
 
+
+    @GetMapping("/detalleParametrizable/{detalleParametrizable}")
+    public ResponseEntity<List<DetalleParametrosDTO>> obtenerdetalleParametrizable(@PathVariable(name = "detalleParametrizable") String detalleParametrizable){
+
+        return ResponseEntity.ok(detalleParametrosService.listadoDetalleParametrizablePorListaParametros(detalleParametrizable));
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<DetalleParametrosDTO> obtenerDetalleParametrosPorID(@PathVariable(name = "id") long id) {
 
