@@ -107,15 +107,37 @@ Apis Medsoft Web
   - Autorizacion: no lo tiene (sin token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/email/enviar-correo
   - json de ejemplo:
+
+      
           {
+   
             "destinatario":"josuespencerrojas@gmail.com",
             "asunto": "Codigo de recuperación de contraseña",
             "mensaje": "mensaje de prueba"
+   
           }
-    
+      
   - Captura de ejemplo:
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/95db0f83-10c1-4dc5-95c8-b076522fd070)
+
+
+- 2.6. Usar codigo
+  - Metodo: get
+  - Autorizacion: no lo tiene (sin token)
+  - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/st/email/usarCodigo/josuespencerrojas@gmail.com/223898
+  - Captura del resultado:
+  
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/48d0f945-a483-47c3-be94-3ed85ca7b8c8)
+
+
+- 2.6. actualizar paswoord
+  - Metodo: get
+  - Autorizacion: no lo tiene (sin token)
+  - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/st/email/actualizarPassword/josuespencerrojas@gmail.com/87654321
+  - Captura del resultado:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/a358b263-d356-4f74-a01d-391c571783a6)
 
     
 3- Combobox
