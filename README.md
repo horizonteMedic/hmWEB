@@ -131,7 +131,7 @@ Apis Medsoft Web
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/48d0f945-a483-47c3-be94-3ed85ca7b8c8)
 
 
-- 2.6. actualizar paswoord
+- 2.7. actualizar paswoord
   - Metodo: get
   - Autorizacion: no lo tiene (sin token)
   - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/st/email/actualizarPassword/josuespencerrojas@gmail.com/87654321
