@@ -48,7 +48,7 @@ Apis Medsoft Web
       
 2- Usuario
 
-  - Registro de Usuarios
+  - 2.1. Registro de Usuarios
     - Metodo: post
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/register
@@ -67,7 +67,7 @@ Apis Medsoft Web
    
       
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/583fbbbc-cb3e-495c-9044-2420aefce778)
-- Login
+- 2.2. Login
   - Metodo: post
   - Autorizacion: No lo tiene (sin token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/auth/login
@@ -85,7 +85,7 @@ Apis Medsoft Web
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28cccc89-69f9-48db-9e42-7359612e9982)
   - Nota: Apartir de aca se copiara el token para acceder a todos los servicios.
     
-- Listado de todos los usuarios
+- 2.3. Listado de todos los usuarios
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario
@@ -93,7 +93,7 @@ Apis Medsoft Web
  
     
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8b525572-b930-417f-9527-2b68c97cb323)
-- Listado de los usuarios por id
+- 2.4. Listado de los usuarios por id
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/{id del usaurio a buscar}
@@ -102,8 +102,22 @@ Apis Medsoft Web
     
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6d3d0014-fa9a-48d3-b831-ab887fcffa01)
 
+- 2.5. Enviar correo para recuperacion de contraseña
+  - Metodo: post
+  - Autorizacion: no lo tiene (sin token)
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/email/enviar-correo
+  - json de ejemplo:
+          {
+            "destinatario":"josuespencerrojas@gmail.com",
+            "asunto": "Codigo de recuperación de contraseña",
+            "mensaje": "mensaje de prueba"
+          }
     
+  - Captura de ejemplo:
 
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/95db0f83-10c1-4dc5-95c8-b076522fd070)
+
+    
 3- Combobox
 
   - 3.1 Listado de Departamentos
