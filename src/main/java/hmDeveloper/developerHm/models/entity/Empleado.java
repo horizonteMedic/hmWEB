@@ -16,7 +16,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "empleado", uniqueConstraints ={@UniqueConstraint(columnNames = {"num_documento"})})
+@Table(name = "empleado", uniqueConstraints ={@UniqueConstraint(columnNames = {"num_documento","correo_elect"})})
 public class Empleado implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "sede_hm_web")
+@Table(name = "sede_hm_web", uniqueConstraints ={@UniqueConstraint(columnNames = {"codigo_sede"})})
 public class SedeHmWeb implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -25,6 +25,9 @@ public class SedeHmWeb implements Serializable {
 
     @Column(name = "nombre_sede", length = 50)
     private String nombreSede;
+
+    @Column(name = "codigo_sede",length = 4,nullable = false)
+    private String codigoSede;
 
     private Boolean estado;
 
