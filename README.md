@@ -1,7 +1,7 @@
 Apis Medsoft Web
 
 1- Empleado
-  - Registro de Empleados
+  - 1.1. Registro de Empleados
     - Metodo: post
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado
@@ -9,16 +9,20 @@ Apis Medsoft Web
       
           {
       
-          "nombres":"karla sofia",
-          "apellidos": "ramirez aguilar",
-          "cargo": "administrativo",
-          "correoElect": "karlasofia_aguilar@gmail.com",
-          "numDocumento": 78675655,
-          "celular": "942356764",
+          "tipoDoc": "DNI",
+          "numDocumento": 12345678,
+          "nombres":"daniel",
+          "apellidos": "placenzia",
+          "cargo": "developer",
+          "ubigeo": "030707", 
+          "cip":null, 
+          "correoElect": "daniel.plasencia.dlc@gmail.com",
+          "celular": "943343543",
           "telFijo": null,
-          "direccion": "Av. los paujiles #657",
+          "direccion": "av. los rosales",
           "estado": true,
-          "fechaRegistro": "2024-03-26",
+          "fechaNacimiento": "2000-08-19",
+          "fechaRegistro": "2024-03-04",
           "userRegistro": "joshue",
           "fechaActualizacion": null,
           "userActualizacion": null
@@ -27,24 +31,58 @@ Apis Medsoft Web
       
     - Captura del resultado:
       
-      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8cc1dc98-50ea-414f-a3d1-994ab1f9f7e8)
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/49f8c3cf-b84c-4afd-ae8e-caecb7cfe41c)
 
-  - Listado de todos los empleados
+
+  - 1.2. Listado de todos los empleados
     - Metodo: get
     - Autorizacion: No lo tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado
     - Captura del resultado:
    
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/32b6b561-7392-4b8d-a0d6-8424a9624dce)
+
       
-      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/20be6a82-d8ca-455c-8dc9-92ea17e0c1f9)
-  - Listado de empleado por busqueda de ID
+  - 1.3. Listado de empleado por busqueda de ID
     - Metodo: get
     - Autorizacion: No lo tiene (sin token)
-    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/{id del empleado a buscar}
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/152
     - Captura del resultado:
    
       
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/bb57a19c-ca7c-4f70-8717-177a65d7aefd)
+
+
+  - 1.4. Actualizar empleado
+    - Metodo: put
+    - Autorizacion: No lo tiene (sin token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/152
+    - Json de ejemplo:
+
+          {
+      
+          "tipoDoc": "DNI",
+          "numDocumento": 12345678,
+          "nombres":"daniel",
+          "apellidos": "placenzia",
+          "cargo": "developer",
+          "ubigeo": "030707", 
+          "cip":null, 
+          "correoElect": "daniel.plasencia.dlc@gmail.com",
+          "celular": "943343543",
+          "telFijo": null,
+          "direccion": "av. los rosales",
+          "estado": true,
+          "fechaNacimiento": "2000-08-19",
+          "fechaRegistro": "2024-03-04",
+          "userRegistro": "joshue",
+          "fechaActualizacion": null,
+          "userActualizacion": null
+      
+          }
+
+    - Captura del resultado:
+      
       
 2- Usuario
 
@@ -56,17 +94,19 @@ Apis Medsoft Web
       
           {
    
-            "username":"karlaSofia",
-            "password": "123456",
-            "estado": true,
-            "idEmpleado": 2
+          "username":"daniel123",
+          "password": "hm123",
+          "estado": true,
+          "ruc":"12345678912",
+          "idEmpleado": 202
    
           }
       
     - Captura del resultado:
    
-      
-      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/583fbbbc-cb3e-495c-9044-2420aefce778)
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/595dd41d-b563-4768-a561-810915fa0899)
+
+
 - 2.2. Login
   - Metodo: post
   - Autorizacion: No lo tiene (sin token)
@@ -82,7 +122,8 @@ Apis Medsoft Web
       
     - Captura del resultado:
     
-    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28cccc89-69f9-48db-9e42-7359612e9982)
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/64648330-3a3a-4d28-ab34-cc4b31db7d29)
+
   - Nota: Apartir de aca se copiara el token para acceder a todos los servicios.
     
 - 2.3. Listado de todos los usuarios
@@ -91,16 +132,17 @@ Apis Medsoft Web
   - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario
   - Captura de ejemplo:
  
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/cfc53e73-27f5-46d3-be99-44216af3e1b8)
+
     
-    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8b525572-b930-417f-9527-2b68c97cb323)
 - 2.4. Listado de los usuarios por id
   - Metodo: get
   - Autorizacion: Si lo tiene (Con token)
-  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/{id del usaurio a buscar}
+  - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/152
   - Captura de ejemplo:
  
-    
-    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6d3d0014-fa9a-48d3-b831-ab887fcffa01)
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/88d195d9-e4f3-4194-b93d-88e843c32e2d)
+
 
 - 2.5. Enviar correo para recuperacion de contraseña
   - Metodo: post
@@ -225,3 +267,258 @@ Apis Medsoft Web
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/84b28146-2e9d-4d63-beef-f00358b21478)
 
+
+4- Rol
+
+  - 4.1 Registrar Rol
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol
+    - Json de ejemplo:
+
+          {
+   
+            "nombre":"Medico contrata",
+            "descripcion":"solo reportes",
+            "estado": true,
+            "fechaRegistro": "2024-04-24",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null 
+   
+          }
+
+    - Captura del resultado:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/3cf795fc-010a-4c0b-b408-507f1d8ab781)
+
+
+  - 4.2 Mostrar todos los roles
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol
+    - Captura de ejemplo:
+   
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/0691ea85-b2ca-4001-ae4c-f002e4b4a156)
+
+
+  - 4.3 Mostrar un rol por su ID
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol/102
+    - Captura de ejemplo:
+
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28d338d3-aa79-4e0e-92b3-78665825cb1a)
+
+
+  - 4.3 Actualizar Rol
+    - Metodo: Put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol/1
+    - Json de ejemplo
+
+          {
+   
+            "nombre":"Developer",
+            "descripcion":"Acceso Total al Sistema",
+            "estado": true,
+            "fechaRegistro": "2024-04-17",
+            "userRegistro": "developer",
+            "fechaActualizacion": "2024-04-17",
+            "userActualizacion": "developer"
+   
+          }
+
+      
+    - Captura de ejemplo:
+
+
+- 4.4 Eliminar Rol
+    - Metodo: Delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol/102
+    - Json de ejemplo
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/2620db42-99a3-4227-8c2d-7fca3dfeea41)
+
+
+5- Asignar rol a un usuario
+
+  - 5.1 Registrar rol asignado a usuario
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol
+    - Json de ejemplo:
+
+          {
+
+          "estado": true,
+          "fechaRegistro": "2024-04-24",
+          "userRegistro": "developer",
+          "fechaUpt": null,
+          "userUpt": null,
+          "id_user": 152,
+          "id_rol": 53
+   
+          }
+
+  - 5.2 Listado de todos los usuario rol
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol
+
+       
+  - 5.3 LISTADO DE TODOS LOS USUARIOS ROL POR ID UsUARIO ROL
+  
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol/1
+ 
+  - 5.4. Actualizar rol asignado a usuario
+  
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol/1
+    - Json de ejemplo:
+ 
+      
+      {
+        "estado": false,
+        "fechaRegistro": "2024-03-13",
+        "userRegistro": "joshue",
+        "fechaUpt": null,
+        "userUpt": null,
+        "id_user": 2,
+        "id_rol": 2
+
+    }
+
+-5.5. Eliminar asignacion de rol a usuario
+
+    - Metodo: Delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol/1
+
+
+6- Sede
+
+  - 6.1 Registrar una nueva sede
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api//v01/ct/sede
+    - Json de ejemplo:
+
+          {
+
+          "nombreSede":"Trujillo - Santo dominguito",
+          "codigoSede": "T-SD",
+          "estado": true,
+          "fechaRegistro": "2024-04-19",
+          "userRegistro": "developer",
+          "fechaActualizacion": null,
+          "userActualizacion": null
+   
+          }
+
+
+  - 6.2 Registrar una nueva sede
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api//v01/ct/sede
+    - Json de ejemplo:
+
+          {
+
+          "nombreSede":"Trujillo - Santo dominguito",
+          "codigoSede": "T-SD",
+          "estado": true,
+          "fechaRegistro": "2024-04-19",
+          "userRegistro": "developer",
+          "fechaActualizacion": null,
+          "userActualizacion": null
+   
+          }
+
+
+  - 6.2 Listar todas las sedes
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede
+
+  - 6.3 Listar la sede por su id
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede/1
+
+  - 6.4 Actualizar sede
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede/1
+    - json de ejemplo
+
+          {
+
+          "nombreSede":"Trujillo - Santo dominguito",
+          "codigoSede": "T-SD",
+          "estado": true,
+          "fechaRegistro": "2024-04-19",
+          "userRegistro": "developer",
+          "fechaActualizacion": null,
+          "userActualizacion": null
+   
+          }
+
+  - 6.5 Eliminar sede
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link:  https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede/1
+
+
+7- Sede
+
+  - 7.1 Registrar usuario sede
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioSede
+    - Json de ejemplo:
+
+          {
+
+          "id_user":152,
+          "id_sede": 1,
+          "userRegistro": "developer",
+          "fechaRegistro": "2024-04-24"
+
+
+          }
+
+  - 7.2 Listado de todos los usuarios sedes
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioSede
+ 
+      
+  - 7.3 Listado de todos los usuarios sedes por id de usuario sede
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioSede/1
+   
+  - 7.4 Listado de todos los usuarios sedes por id_user
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioSede/listadoPorBusquedaIDUSER/152
+   
+8- Listados
+
+  - 8.1listado de empresas y contratas
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresasContratas/listadoEmpresasContratas
+   
+  - 8.2 listado de historial de usuario
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresasContratas/listadoHistorialUsuarios
+ 
