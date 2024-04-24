@@ -48,8 +48,8 @@ public class SedeHmWeb implements Serializable {
     private String userActualizacion;
 
     @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "empleado_sede", joinColumns = @JoinColumn(name = "id_sede",referencedColumnName = "id_sede"),
-            inverseJoinColumns = @JoinColumn(name = "id_empleado", referencedColumnName = "id_empleado"),
-            uniqueConstraints = {@UniqueConstraint(columnNames = { "id_sede", "id_empleado" }) })
-    private List<Empleado> empleado;
+    @JoinTable(name = "usuario_sede", joinColumns = @JoinColumn(name = "id_sede",referencedColumnName = "id_sede"),
+            inverseJoinColumns = @JoinColumn(name = "id_user", referencedColumnName = "id_user"),
+            uniqueConstraints = {@UniqueConstraint(columnNames = { "id_sede", "id_user" }) })
+    private List<Usuario> usuario;
 }

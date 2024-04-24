@@ -18,5 +18,7 @@ public class UsuarioDTO {
 
     private Boolean estado;
 
+    private String ruc;
+
     private long id_empleado;
 }

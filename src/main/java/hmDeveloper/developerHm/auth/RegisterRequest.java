@@ -13,5 +13,6 @@ public class RegisterRequest {
     String username;
     String password;
     Boolean estado;
+    String ruc;
     Long  idEmpleado;
 }

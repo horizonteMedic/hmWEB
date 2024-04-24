@@ -1,6 +1,5 @@
 package hmDeveloper.developerHm.models.dtos;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,15 +14,22 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmpleadoDTO {
-    private Long id;
+
+    private long id_empleado;
 
     private long numDocumento;
+
+    private String tipoDoc;
 
     private String nombres;
 
     private String apellidos;
 
     private String cargo;
+
+    private String ubigeo;
+
+    private String cip;
 
     @Email
     private String correoElect;
@@ -36,6 +42,9 @@ public class EmpleadoDTO {
     private String direccion;
 
     private Boolean estado;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate fechaNacimiento;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate fechaRegistro;

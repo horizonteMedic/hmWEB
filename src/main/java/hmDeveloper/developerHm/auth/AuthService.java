@@ -52,6 +52,7 @@ public class AuthService {
         usuario.setUsername(request.getUsername());
         usuario.setEstado(request.getEstado());
         usuario.setRole(Role.USER);
+        usuario.setRuc(request.getRuc());
         usuario.setPassword(passwordEncoder.encode(request.getPassword()));
         empleadoDTO=empleadoService.obtenerEmpleadoPorID(request.getIdEmpleado());
         usuario.setEmpleado(mapearEntidad(empleadoDTO));
@@ -64,19 +65,24 @@ public class AuthService {
 
     private Empleado mapearEntidad(EmpleadoDTO empleadoDTO){
         Empleado empleado=new Empleado();
-        empleado.setId(empleadoDTO.getId());
+
+        empleado.setId(empleadoDTO.getId_empleado());
+        empleado.setNumDocumento(empleadoDTO.getNumDocumento());
+        empleado.setTipoDoc(empleadoDTO.getTipoDoc());
         empleado.setNombres(empleadoDTO.getNombres());
         empleado.setApellidos(empleadoDTO.getApellidos());
         empleado.setCargo(empleadoDTO.getCargo());
-        empleado.setCelular(empleadoDTO.getCelular());
-        empleado.setEstado(empleadoDTO.getEstado());
-        empleado.setDireccion(empleadoDTO.getDireccion());
+        empleado.setUbigeo(empleadoDTO.getUbigeo());
+        empleado.setCip(empleadoDTO.getCip());
         empleado.setCorreoElect(empleadoDTO.getCorreoElect());
-        empleado.setNumDocumento(empleadoDTO.getNumDocumento());
+        empleado.setCelular(empleadoDTO.getCelular());
         empleado.setTelFijo(empleadoDTO.getTelFijo());
+        empleado.setDireccion(empleadoDTO.getDireccion());
+        empleado.setEstado(empleadoDTO.getEstado());
+        empleado.setFechaNacimiento(empleadoDTO.getFechaNacimiento());
         empleado.setFechaRegistro(empleadoDTO.getFechaRegistro());
         empleado.setUserRegistro(empleadoDTO.getUserRegistro());
-        empleado.setUserActualizacion(empleadoDTO.getUserActualizacion());
+        empleado.setFechaActualizacion(empleadoDTO.getFechaActualizacion());
         empleado.setUserActualizacion(empleadoDTO.getUserActualizacion());
 
 

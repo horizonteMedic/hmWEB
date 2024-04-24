@@ -31,6 +31,9 @@ public class Usuario implements UserDetails {
 
     private String password;
 
+    @Column(length = 11)
+    private String ruc;
+
     private Boolean estado;
 
     @Enumerated(EnumType.STRING)

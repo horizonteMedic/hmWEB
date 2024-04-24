@@ -187,6 +187,8 @@ public class EmpresaWebServiceImpl implements IEmpresaWebService{
         listadoHistorialUsuarios.setTipoDocumento(historialUsuarios.getTipoDocumento());
         listadoHistorialUsuarios.setNumDocumento(historialUsuarios.getNumDocumento());
         listadoHistorialUsuarios.setUsuario(historialUsuarios.getUsuario());
+        listadoHistorialUsuarios.setIdUser(historialUsuarios.getIdUser());
+        listadoHistorialUsuarios.setIdUserRol(historialUsuarios.getIdUserRol());
 
         return listadoHistorialUsuarios;
     }

@@ -41,4 +41,10 @@ public class HistorialUsuarios implements Serializable {
     private String rol;
 
     private Boolean vigente;
+
+    @Column(name = "id_user")
+    private long idUser;
+
+    @Column(name = "id_user_rol")
+    private long idUserRol;
 }

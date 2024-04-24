@@ -26,4 +26,8 @@ public class HistorialUsuarioDTO {
     private String rol;
 
     private Boolean vigente;
+
+    private long idUser;
+
+    private long idUserRol;
 }

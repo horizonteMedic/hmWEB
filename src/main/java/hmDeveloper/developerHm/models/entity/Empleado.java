@@ -16,14 +16,20 @@ import java.util.Set;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "empleado", uniqueConstraints ={@UniqueConstraint(columnNames = {"num_documento","correo_elect"})})
+@Table(name = "empleado", uniqueConstraints ={@UniqueConstraint(columnNames = {"correo_elect"})})
 public class Empleado implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_empleado")
-    private Long id;
+    private long id;
+
+    @Column(name = "num_documento")
+    private long numDocumento;
+
+    @Column(name = "tipo_doc", length = 30)
+    private String tipoDoc;
 
     @Column(length = 50)
     private String nombres;
@@ -34,11 +40,14 @@ public class Empleado implements Serializable {
     @Column(length = 50)
     private String cargo;
 
+    @Column(length = 6)
+    private String ubigeo;
+
+    @Column(length = 20)
+    private String cip;
+
     @Column(name = "correo_elect")
     private String correoElect;
-
-    @Column(name = "num_documento")
-    private long numDocumento;
 
     private String celular;
 
@@ -48,6 +57,11 @@ public class Empleado implements Serializable {
     private String direccion;
 
     private Boolean estado;
+
+    @Temporal(TemporalType.DATE)
+    @Column(name = "fecha_nacimiento")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate fechaNacimiento;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "fecha_registro")

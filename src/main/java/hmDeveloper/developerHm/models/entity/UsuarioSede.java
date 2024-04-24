@@ -13,14 +13,14 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "empleado_sede")
-public class EmpleadoSede implements Serializable {
+@Table(name = "usuario_sede")
+public class UsuarioSede implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id_empleado_sede")
-    private long idEmpleadoSede;
+    @Column(name = "id_usuario_sede")
+    private long idUsuarioSede;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "fecha_registro")
@@ -35,6 +35,6 @@ public class EmpleadoSede implements Serializable {
     private SedeHmWeb sede;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_empleado", nullable = false)
-    private Empleado empleado;
+    @JoinColumn(name = "id_user", nullable = false)
+    private Usuario usuario;
 }

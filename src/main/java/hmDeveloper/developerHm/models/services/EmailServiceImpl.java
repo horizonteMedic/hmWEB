@@ -96,6 +96,7 @@ public class EmailServiceImpl implements IEmailService{
 
         usuarioDTO.setUsername(usuario.getUsername());
         usuarioDTO.setEstado(usuario.getEstado());
+        usuarioDTO.setRuc(usuario.getRuc());
         usuarioDTO.setId_empleado(usuario.getEmpleado().getId());
 
         return usuarioDTO;
