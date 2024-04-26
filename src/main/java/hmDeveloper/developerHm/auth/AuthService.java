@@ -1,12 +1,12 @@
 package hmDeveloper.developerHm.auth;
 
 import hmDeveloper.developerHm.auth.user.Role;
-import hmDeveloper.developerHm.auth.user.UserRepository;
-import hmDeveloper.developerHm.models.dtos.EmpleadoDTO;
-import hmDeveloper.developerHm.models.entity.Empleado;
-import hmDeveloper.developerHm.models.entity.Usuario;
-import hmDeveloper.developerHm.models.jwt.JwtService;
-import hmDeveloper.developerHm.models.services.EmpleadoServiceImpl;
+import hmDeveloper.developerHm.models.azure.repository.UserRepository;
+import hmDeveloper.developerHm.models.azure.dtos.EmpleadoDTO;
+import hmDeveloper.developerHm.models.azure.entity.Empleado;
+import hmDeveloper.developerHm.models.azure.entity.Usuario;
+import hmDeveloper.developerHm.models.azure.jwt.JwtService;
+import hmDeveloper.developerHm.models.azure.services.EmpleadoServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,8 +14,6 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
