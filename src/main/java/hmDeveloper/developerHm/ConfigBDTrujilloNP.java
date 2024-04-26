@@ -3,7 +3,6 @@ package hmDeveloper.developerHm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -36,7 +35,6 @@ public class ConfigBDTrujilloNP {
         return dataSource;
     }
 
-    @Primary
     @Bean(name = "trujilloNPEntityManagerFactory")
     public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(){
         LocalContainerEntityManagerFactoryBean em=new LocalContainerEntityManagerFactoryBean();
@@ -62,7 +60,6 @@ public class ConfigBDTrujilloNP {
 
     }
 
-    @Primary
     @Bean(name = "trujilloNPTransactionManagerFactory")
     public PlatformTransactionManager transactionManager(){
         JpaTransactionManager transactionManager=new JpaTransactionManager();
