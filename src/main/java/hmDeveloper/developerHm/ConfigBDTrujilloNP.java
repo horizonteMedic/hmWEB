@@ -54,6 +54,7 @@ public class ConfigBDTrujilloNP {
         properties.put("hibernate.dialect",env.getProperty("trujilloNP.jpa.database-platform"));
         properties.put("hibernate.format_sql", env.getProperty("trujilloNP.jpa,properties.hibernate.format_sql"));
 
+
         em.setJpaPropertyMap(properties);
 
         return em;
