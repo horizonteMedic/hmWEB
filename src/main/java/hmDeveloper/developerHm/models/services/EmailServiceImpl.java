@@ -20,6 +20,8 @@ public class EmailServiceImpl implements IEmailService{
     private final JavaMailSender javaMailSender;
     private final TemplateEngine templateEngine;
 
+
+    private String var;
     @Autowired
     private IRespuestaBackendRepository respuestaBackendRepository;
 
