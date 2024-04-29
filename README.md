@@ -522,3 +522,34 @@ Apis Medsoft Web
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresasContratas/listadoHistorialUsuarios
  
+9- SISTEMA DE ARCHIVOS
+
+  - 9.1 Listado de sedes por usuario
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://backendhm.azurewebsites.net/api/v01/ct/sistemaArchivos/sedePorUsuario/developer
+    - Captura:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/76ae9dd0-52d3-4e5d-8fcd-f1c200e77e18)
+
+
+  - 9.1 Listado de usuarios
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://backendhm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoHistorialPacientesConFiltros
+    - Json de ejemplo:
+
+          {
+
+            "userName":"developer",
+            "fechaInicio": "2024-01-01",
+            "fechaFin": "2024-04-29",
+            "sedeUser": "T-NP",
+            "tipoUsuario": null,
+            "rucUser": null
+
+          }
+
+    - Captura de ejemplo:
+   
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/05466ff7-1b29-48f4-a190-80a0f555dc70)
