@@ -533,7 +533,7 @@ Apis Medsoft Web
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/76ae9dd0-52d3-4e5d-8fcd-f1c200e77e18)
 
 
-  - 9.1 Listado de usuarios
+  - 9.2 Listado de usuarios
     - Metodo: post
     - Autorizacion: Si tiene (token)
     - Link: https://backendhm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoHistorialPacientesConFiltros
