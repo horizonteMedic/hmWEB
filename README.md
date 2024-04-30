@@ -527,7 +527,7 @@ Apis Medsoft Web
   - 9.1 Listado de sedes por usuario
     - Metodo: get
     - Autorizacion: Si tiene (token)
-    - Link: https://backendhm.azurewebsites.net/api/v01/ct/sistemaArchivos/sedePorUsuario/developer
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/sedePorUsuario/developer
     - Captura:
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/76ae9dd0-52d3-4e5d-8fcd-f1c200e77e18)
@@ -536,7 +536,7 @@ Apis Medsoft Web
   - 9.2 Listado de usuarios
     - Metodo: post
     - Autorizacion: Si tiene (token)
-    - Link: https://backendhm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoHistorialPacientesConFiltros
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoHistorialPacientesConFiltros
     - Json de ejemplo:
 
           {
@@ -553,3 +553,143 @@ Apis Medsoft Web
     - Captura de ejemplo:
    
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/05466ff7-1b29-48f4-a190-80a0f555dc70)
+
+  - 9.3 Tipo de archivos a subir   (Registrar un tipo de archivo)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/tipoArchivo
+    - Json de ejemplo:
+
+          {
+
+            "nombre":"examen covid",
+            "extension":"pdf",
+            "color":"morado",
+            "codigo":"#572364",
+            "estado": false,
+            "fechaRegistro": "2024-04-30",
+            "userRegistro": "joshue",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+
+    - captura de ejemplo:
+    
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/674b2f28-d89f-45ee-b4ed-439efdcec145)
+
+  - 9.4 Listar todo los tipos de archivos   (mostrar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/tipoArchivo
+
+    - captura de ejemplo:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/195d2a5f-fe22-49db-9ee1-caaaba87016e)
+
+
+  - 9.5 Listar los tipo de archivo por id archivo   (mostrar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/tipoArchivo/1
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/75a52ae1-23d0-44f7-b68d-ee9a69f90b64)
+
+
+  - 9.6 Listar los tipo de archivo habilitados   (mostrar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/tipoArchivo/listadoArchivosHabilitados
+    - Captura de ejemplo
+   
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b3593309-4025-4533-9510-7ce52cd5b2a9)
+
+  - 9.7 Actualizar tipo de archivo   (mostrar)
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: http://localhost:8080/api/v01/ct/tipoArchivo/3
+    - Json de ejemplo
+
+          {
+
+            "nombre":"Eliminar",
+            "extension":"pdf",
+            "color":"morado",
+            "codigo":"#572364",
+            "estado": true,
+            "fechaRegistro": "2024-04-30",
+            "userRegistro": "joshue",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+
+  - 9.8 Historia clinica de los usuarios - detalle   (mostrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/detalleListadoHistorialPacientesConFiltros
+    - Json de ejemplo
+
+          {
+
+            "userName":"developer",
+            "fechaInicio": "2023-01-01",
+            "fechaFin": "2024-04-29",
+            "sedeUser": "T-NP",
+            "dniUser":"41003364",
+            "tipoUsuario": null,
+            "rucUser": null
+
+          }
+      
+    - Captura de ejemplo
+
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ac8472df-92cb-4c41-bd77-577d3830d8a8)
+
+
+  - 9.9 Registrar y actualizar archivos   (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/archivos/registrarArchivo
+    - Json de ejemplo
+
+          {
+
+             "rutaArchivo": null,
+             "nombreArchivo":"legajo medic hm.pdf",
+             "dni":76574022,
+             "historiaClinica":"T-NP-86981",
+             "orden": 86981,
+             "servidor":"azure",
+             "estado": false,
+             "fechaRegistro": "2024-04-30",
+             "userRegistro": "joshue",
+            "fechaActualizacion": null,
+            "userActualizacion": null,
+            "id_tipo_archivo": 1,
+            "fileBase64": ""
+
+          }
+      
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/d7fce1a6-e8ac-4d10-bbb0-0f68d13a671d)
+
+      - 9.10 Busqueda de archivos por historia clinica   (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/archivos/busquedaPorHC/T-NP-86982
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/031092dd-d9f2-4c8c-876f-f14d5f84c6cd)
+
+            - 9.10 Busqueda de archivos por historia clinica y tipo de archivo  (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/archivos/detalleArchivo/T-NP-86982/1
+    - Captura de ejemplo
+      
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6e358b79-ce92-4865-a79b-cf7564fce882)
+
