@@ -14,7 +14,8 @@ Apis Medsoft Web
           "nombres":"daniel",
           "apellidos": "placenzia",
           "cargo": "developer",
-          "ubigeo": "030707", 
+          "ubigeo": "030707",
+          "sexo": "Masculino"
           "cip":null, 
           "correoElect": "daniel.plasencia.dlc@gmail.com",
           "celular": "943343543",
@@ -66,7 +67,8 @@ Apis Medsoft Web
           "nombres":"daniel",
           "apellidos": "placenzia",
           "cargo": "developer",
-          "ubigeo": "030707", 
+          "ubigeo": "030707",
+          "sexo": "empleado"
           "cip":null, 
           "correoElect": "daniel.plasencia.dlc@gmail.com",
           "celular": "943343543",
@@ -693,3 +695,20 @@ Apis Medsoft Web
       
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6e358b79-ce92-4865-a79b-cf7564fce882)
 
+  - 9.10 Listar empleado por nro de documento(dni)  (listar)
+    - Metodo: get
+    - Autorizacion: no tiene (sin token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/busquedaPorNroDoc/76574022
+    - captura de ejemplo:
+
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/3cecf65b-c85a-4eee-b362-135e0b8916e7)
+
+
+  - 9.11 Listar de usuarios por id empleado  (listar)
+    - Metodo: get
+    - Autorizacion: sitiene ( token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/busquedaIdEmpleado/152
+    - captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/50e777d7-78ab-496a-b589-0a407bc2fa88)
