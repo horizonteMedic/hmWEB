@@ -679,7 +679,9 @@ Apis Medsoft Web
 
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/d7fce1a6-e8ac-4d10-bbb0-0f68d13a671d)
 
-      - 9.10 Busqueda de archivos por historia clinica   (listar)
+
+- 9.10 Busqueda de archivos por historia clinica   (listar)
+  
     - Metodo: get
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/archivos/busquedaPorHC/T-NP-86982
@@ -695,7 +697,7 @@ Apis Medsoft Web
       
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6e358b79-ce92-4865-a79b-cf7564fce882)
 
-  - 9.10 Listar empleado por nro de documento(dni)  (listar)
+  - 9.11 Listar empleado por nro de documento(dni)  (listar)
     - Metodo: get
     - Autorizacion: no tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/busquedaPorNroDoc/76574022
@@ -705,10 +707,146 @@ Apis Medsoft Web
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/3cecf65b-c85a-4eee-b362-135e0b8916e7)
 
 
-  - 9.11 Listar de usuarios por id empleado  (listar)
+  - 9.12 Listar de usuarios por id empleado  (listar)
     - Metodo: get
     - Autorizacion: sitiene ( token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/busquedaIdEmpleado/152
     - captura de ejemplo:
 
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/50e777d7-78ab-496a-b589-0a407bc2fa88)
+
+
+ - 9.13 Registrar las vistas del sistema  (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/opcionesInterfaz
+    - Json de ejemplo
+
+          {
+
+            "nombre":"Menu de configuraciones",
+            "descripcion":"listado de configuraciones del sistemas que solo tiene acceso el administradpr",
+            "estado": true,
+            "nivel":1,
+            "idPadre":null,
+            "fechaRegistro": "2024-05-02",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+      
+    - Captura de ejemplo
+  
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/98aff288-3b63-470c-a63b-d1535fbc8587)
+
+
+ - 9.14 Listar las vistas del sistema  (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/opcionesInterfaz
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/118d0389-cb86-4e23-95a4-8d17de9ad4ea)
+
+
+ - 9.15 Listar las vistas del sistema por id de la vista  (listar por id vista)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/opcionesInterfaz/1
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/90e9f110-bcb1-469c-87ae-32dbc10322f9)
+
+   
+ - 9.16 Actualizar vista (actualizar vista con id de la vista)
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/opcionesInterfaz/1
+    - Json de ejemplo
+
+          {
+
+            "nombre":"Menu de configuraciones",
+            "descripcion":"listado de configuraciones del sistemas que solo tiene acceso el administrador, actualizado",
+            "estado": true,
+            "nivel":1,
+            "idPadre":null,
+            "fechaRegistro": "2024-05-02",
+            "userRegistro": "developer",
+            "fechaActualizacion": "2024-05-02",
+            "userActualizacion":  "developer"
+
+          }
+
+    - Captura de ejemplo:
+
+       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/a21b0c14-341c-4091-92ea-7f7a5d74067b)
+
+ - 9.17 Eliminar Vista del sistema  (eliminar por id vista)
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/opcionesInterfaz/1
+    - Captura de ejemplo   
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b153a535-14a7-493d-a4a7-ddb5093dca49)
+
+
+ - 9.18 Asignar vista a roles (Asignar vistas)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol
+    - Json de ejemplo
+
+          {
+
+            "descripcion":"Acceso de privilegio rol",
+            "estado": true,
+            "fechaRegistro": "2024-05-02",
+            "userRegistro": "joshue",
+            "fechaActualizacion": null,
+            "userActualizacion": null,
+            "id_rol":53,
+            "id_opcion_interfaz":1
+
+          }
+
+
+   - Captura de ejemplo
+
+     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/92c146c3-2816-43e1-8e39-da1ae5947093)
+
+
+ - 9.19 Listar todas las asignaciones por rol (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b7118ecd-22e9-4889-ad5b-e651aebabf59)
+
+ - 9.20 Listar  las asignaciones por id de asignacion rol (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol/3
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c696f150-e0e0-4213-857e-43be393881cd)
+
+
+ - 9.21 actualizar asignacion del rol por id(listar)
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol/3
+    - Captura de ejemplo
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/d2df7bf9-667c-4b1e-9fb5-f76fea7462d3)
+
+   - 9.22 Elimiar asignacion del rol por id(listar)
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol/3
+    - Captura de ejemplo 
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/16e14457-b95b-4728-9513-cad776649fbc)
+
