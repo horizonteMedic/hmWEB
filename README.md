@@ -850,3 +850,164 @@ Apis Medsoft Web
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/16e14457-b95b-4728-9513-cad776649fbc)
 
+
+ - 9.22 Registrar Empresa (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresa
+    - Json de ejemplo
+
+          {
+
+            "rucEmpresa": "12345678987",
+            "razonEmpresa": "razon de prueba a eliminar",
+            "direccionEmpresa": "direccion de prueba",
+            "telefonoEmpresa": "telefono de prueba",
+            "responsableEmpresa": "responsable de prueba",
+            "emailEmpresa": "diremail  de prueba",
+            "apiToken": null
+
+          }
+
+ - 9.23 Listar Empresa (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresa
+
+ - 9.24 Listar Empresa por ruc (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresa/12345678987
+  
+ - 9.25 Actualizar Empresa (registrar)
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresa/12345678987
+    - Json de ejemplo
+
+          {
+
+            "razonEmpresa": "razon de prueba a eliminar",
+            "direccionEmpresa": "direccion de prueba",
+            "telefonoEmpresa": "telefono de prueba",
+            "responsableEmpresa": "responsable de prueba",
+            "emailEmpresa": "diremail  de prueba",
+            "apiToken": null
+
+          }
+
+ - 9.26 Eliminar Empresa por ruc (delete)
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/empresa/12345678987
+  
+ - 9.27 Registrar Contrata (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/contrata
+    - Json de ejemplo
+
+          {
+
+            "rucContrata": "12345678987",
+            "razonContrata": "razon de prueba a eliminar",
+            "direccionContrata": "direccion de prueba",
+            "telefonoContrata": "telefono de prueba",
+            "responsableContrata": "responsable de prueba",
+            "emailContrata": "email  de prueba"
+
+          }
+
+
+ - 9.28 Listar contrata (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/contrata
+
+ - 9.29 Listar contrata por ruc (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/contrata/12345678987
+  
+ - 9.30 Actualizar contrata (registrar)
+    - Metodo: put
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/contrata/12345678987
+    - Json de ejemplo
+  
+          {
+
+            "razonContrata": "razon de prueba a eliminar",
+            "direccionContrata": "direccion de prueba",
+            "telefonoContrata": "telefono de prueba",
+            "responsableContrata": "responsable de prueba",
+            "emailContrata": "email  de prueba"
+
+          }
+
+  
+ - 9.31 Eliminar contrata por ruc (delete)
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/contrata/12345678987
+
+
+ - 9.32 Asignar empresas y contratas a usuario (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/UsuarioAsingacionEmpCont
+    - Json de ejemplo
+
+          {
+
+            "ruc": "20604261580",
+            "idUser": 152,
+            "tipo": "EMPRESA",
+            "estado": true,
+            "fechaRegistro": "2024-05-03",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+
+ - 9.33 Listar asignacion (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoUsuarioAsingacionEmpCont
+
+ - 9.34 Listar asignacion por id (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoUsuarioAsingacionEmpCont/1
+
+ - 9.35 actualizar asignacion a  usuario (registrar)
+    - Metodo: post
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/UsuarioAsingacionEmpCont/1
+    - Json de ejemplo
+
+          {
+
+            "ruc": "20604261580",
+            "idUser": 152,
+            "tipo": "EMPRESA",
+            "estado": true,
+            "fechaRegistro": "2024-05-03",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+
+
+ - 9.36 ELIMINAR asignacion por id (delete)
+    - Metodo: delete
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoUsuarioAsingacionEmpCont/1
+  
+
+ - 9.37 Listar de empresas o contratas (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoEmpresasOcontratas/CONTRATA
