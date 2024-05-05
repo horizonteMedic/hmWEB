@@ -539,16 +539,17 @@ Apis Medsoft Web
     - Metodo: post
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoHistorialPacientesConFiltros
+    - ojo: en este caso se esta enviado el ruc de empresa porque se marco el combbox de los filtros de empresa y se seleciono uno, si se seleccionara contrata se enviara en rucContrata y el de empresa se enviaria vacio
     - Json de ejemplo:
 
           {
 
-            "userName":"developer",
-            "fechaInicio": "2024-01-01",
-            "fechaFin": "2024-04-29",
-            "sedeUser": "T-NP",
-            "tipoUsuario": null,
-            "rucUser": null
+              "userName":"developer",
+              "fechaInicio": "2024-04-01",
+              "fechaFin": "2024-04-29",
+              "sedeUser": "T-NP",
+              "rucEmpresa": "20477167561",
+              "rucContrata": ""
 
           }
 
@@ -635,20 +636,21 @@ Apis Medsoft Web
 
           {
 
-            "userName":"developer",
-            "fechaInicio": "2023-01-01",
-            "fechaFin": "2024-04-29",
-            "sedeUser": "T-NP",
-            "dniUser":"41003364",
-            "tipoUsuario": null,
-            "rucUser": null
+              "userName":"developer",
+              "fechaInicio": "2024-04-01",
+              "fechaFin": "2024-04-29",
+              "sedeUser": "T-NP",
+              "dniUser":"42394174",
+              "rucEmpresa": "20477167561",
+              "rucContrata": ""
 
           }
       
     - Captura de ejemplo
 
 
-      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ac8472df-92cb-4c41-bd77-577d3830d8a8)
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c37730e4-0dbc-4bb3-a855-e7df6ebc27d1)
+
 
 
   - 9.9 Registrar y actualizar archivos   (registrar)
@@ -1011,3 +1013,13 @@ Apis Medsoft Web
     - Metodo: get
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoEmpresasOcontratas/CONTRATA
+  
+ - 9.38 Listar de empresas o contratas por el username (listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/{username}/{EMPRESA O CONTRATA}
+    - LINK: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/developer/EMPRESA
+    - Captura de ejemplo
+
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/31ad7621-8079-49b1-8705-f974973db491)
+
