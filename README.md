@@ -1023,3 +1023,28 @@ Apis Medsoft Web
 
    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/31ad7621-8079-49b1-8705-f974973db491)
 
+ - 9.39 Listar de empresas o contratas por el id_user(listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoEmpContIdUser/402
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/7beb87f5-d51b-4ffa-83e8-60b69eddd594)
+
+
+ - 9.40 Actualizar usuario menos su contraseña (update) -> implementar pero aun no realiza el update(mañana lo reviso)
+
+    - Json de ejemplo
+
+          {
+              "username": "developer",
+              "estado": false,
+              "id_empleado": 152
+
+          }
+
+     - Captura de ejemplo
+  
+       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/3d3139e8-f458-4e53-818b-cdcac0218901)
+
+
