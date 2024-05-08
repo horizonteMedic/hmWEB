@@ -1006,7 +1006,7 @@ Apis Medsoft Web
  - 9.36 ELIMINAR asignacion por id (delete)
     - Metodo: delete
     - Autorizacion: Si tiene (token)
-    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/listadoUsuarioAsingacionEmpCont/1
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/UsuarioAsingacionEmpCont/1
   
 
  - 9.37 Listar de empresas o contratas (listar)
