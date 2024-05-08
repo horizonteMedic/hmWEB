@@ -1047,4 +1047,8 @@ Apis Medsoft Web
   
        ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/3d3139e8-f458-4e53-818b-cdcac0218901)
 
-
+ - 9.41 Listar de sedes habilitadas(listar)
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede/listadoSedesHabilitados
+    - Captura de ejemplo
