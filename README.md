@@ -1053,13 +1053,13 @@ Apis Medsoft Web
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sede/listadoSedesHabilitados
     - Captura de ejemplo
 
- - 9.42 Listar de roles habilitados(listar)
+ - 9.42 Listado de roles habilitados(listar)
     - Metodo: get
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol/listadoRolesHabilitados
     - Captura de ejemplo
 
- - 9.43 Listar de roles por id usuario(listar)
+ - 9.43 Listado de roles por id usuario(listar)
     - Metodo: get
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/rol/busquedaRolesPorIdUser/402
