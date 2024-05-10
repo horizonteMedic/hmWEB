@@ -1076,4 +1076,9 @@ Apis Medsoft Web
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/privilegioRol/busquedaPorIdRol/1
     - Captura de ejemplo
-  
+
+ - 9.46 Listado de usuario rol por id user
+    - Metodo: get
+    - Autorizacion: Si tiene (token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol/BusquedaUsuarioRolPorIdUser/402
+    - Captura de ejemplo
