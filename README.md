@@ -1032,8 +1032,10 @@ Apis Medsoft Web
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/7beb87f5-d51b-4ffa-83e8-60b69eddd594)
 
 
- - 9.40 Actualizar usuario menos su contraseña (update) -> implementar pero aun no realiza el update(mañana lo reviso)
-
+ - 9.40 Actualizar usuario menos su contraseña (update) -> recibe como parametro el ID USER
+    - Metodo put:
+    - Autorizacion: si tiene (token) 
+    - https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuario/actualizacionParcial/402
     - Json de ejemplo
 
           {
