@@ -1092,3 +1092,75 @@ Apis Medsoft Web
     - Autorizacion: No tiene (sin token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/listadoBusquedaUsername/developer
     - Captura de ejemplo:
+      
+  - 9.48 Listado de roles por username
+    - Metodo: get
+    - Autorizacion: si tiene ( token)
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rol/busquedaRolesPorUserName/developer
+    - Captura de ejemplo:
+
+  - 9.49 Eliminar archivo subido a azure por ID archivos
+    - Metodo: delete
+    - Autorizacion: si tiene ( token)
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/903
+    - Captura de ejemplo:
+
+      
+   - 9.50 Registrar Asignacion de rol a rol
+    - Metodo post:
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado
+    - Json de ejemplo
+
+          {
+            "idRol":1,
+            "idRolAsignar":502,
+            "estado": true,
+            "fechaRegistro": "2024-05-14",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+     
+     - Leyenda:
+       idRol: Es el rol al cual se le va asignar multiples rol
+       idRolAsignar: es el id de los roles asignados al rol padre
+     - Captura de ejemplo
+
+    - 9.51 listado de roles asignados
+    - Metodo: get
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado
+
+    - 9.52 listado de roles asignados por id rol asignado
+    - Metodo: get
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado/52
+
+    - 9.53 listado de roles asignados por id rol
+    - Metodo: get
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado/busquedaRolesPorIdRol/1
+    
+   - 9.54 Actualizar asignacion de roles a rol
+    - Metodo: put
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado/52
+    - Json de ejemplo
+
+          {
+            "idRol":1,
+            "idRolAsignar":502,
+            "estado": false,
+            "fechaRegistro": "2024-05-14",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+
+          }
+
+    - 9.55 eliminar rol asignado
+    - Metodo: delete
+    - Autorizacion: si tiene (token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado/52
