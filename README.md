@@ -567,6 +567,7 @@ Apis Medsoft Web
 
             "nombre":"examen covid",
             "extension":"pdf",
+            "nomenclatura": "EXA-COV",
             "color":"morado",
             "codigo":"#572364",
             "estado": false,
@@ -618,6 +619,7 @@ Apis Medsoft Web
 
             "nombre":"Eliminar",
             "extension":"pdf",
+            "nomenclatura":"ELIM",
             "color":"morado",
             "codigo":"#572364",
             "estado": true,
@@ -1084,3 +1086,9 @@ Apis Medsoft Web
     - Autorizacion: Si tiene (token)
     - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/usuarioRol/BusquedaUsuarioRolPorIdUser/402
     - Captura de ejemplo
+      
+  - 9.47 Listado de usuario  por username
+    - Metodo: get
+    - Autorizacion: No tiene (sin token)
+    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/st/empleado/listadoBusquedaUsername/developer
+    - Captura de ejemplo:
