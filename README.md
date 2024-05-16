@@ -1165,14 +1165,17 @@ Apis Medsoft Web
     - Autorizacion: si tiene (token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/rolAsignado/52
 
-    
+
+
     - 9.56 Listado de tipo de archivos habilitados por id user(reemplazo de la 9.6) 
     - Metodo: get
     - Autorizacion: si tiene (token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivo/listadoTiposArchivosPorIdUser/402
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/31080ced-0c37-40d1-9b77-3301b44c2ca5)
+
 
     - 9.57 Listado de tipo de archivos por historia clinica y id user(reemplazo de la 9.10 -> la primera) 
     - Metodo: get
@@ -1180,7 +1183,9 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/busquedaPorHC/T-NP-87241/402
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6170fac7-7bee-4c43-854b-4128ca66b33f)
+
 
     - 9.58 Listar todos los tipo de archivo asignado
     - Metodo: get
@@ -1188,7 +1193,9 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivoAsignado
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/8a51ea77-7dd3-49f2-b720-6d3c3393fbea)
+
 
     
     - 9.59 Listar los tipo de archivo asignado por id tipo archivo asignado
@@ -1197,7 +1204,9 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivoAsignado/54
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/64e36f6e-6064-4a72-b30d-abad201af363)
+
 
     
     - 9.60 Listar los tipo de archivo asignado por id rol
@@ -1206,7 +1215,9 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivoAsignado/busquedaTipoArchivoAsignadoPorIdRol/1
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/63cbadc6-6676-4fa1-b08c-e56a07cd81b2)
+
         
    - 9.61 Registrar Tipo archivo asignado a un rol
     - Metodo: post
@@ -1227,7 +1238,9 @@ Apis Medsoft Web
 
      - Captura de ejemplo:
 
+
        ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f6138d52-8671-4c0a-955f-d38b86973325)
+
 
 
    - 9.62 Actualizar Tipo archivo asignado a un rol
@@ -1235,6 +1248,7 @@ Apis Medsoft Web
     - Autorizacion: si tiene (token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivoAsignado/52
     - Json de ejemplo
+
 
           {
             "idRol":1,
@@ -1247,9 +1261,12 @@ Apis Medsoft Web
 
           }
 
+
      - Captura de ejemplo:
+
     
        ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/2582dff3-ca15-4ed7-921f-fbad79023782)
+
 
     - 9.63 Eliminar tipo de archivo asignado por id tipo archivo asignado
     - Metodo: delete
@@ -1257,4 +1274,6 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivoAsignado/57
     - Captura de ejemplo:
 
+
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/21f06186-b337-4472-b6f3-0160dbe24e8b)
+
