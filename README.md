@@ -1160,6 +1160,8 @@ Apis Medsoft Web
 
           }
 
+
+
     - 9.55 eliminar rol asignado
     - Metodo: delete
     - Autorizacion: si tiene (token) 
@@ -1167,14 +1169,14 @@ Apis Medsoft Web
 
 
 
-    - 9.56 Listado de tipo de archivos habilitados por id user(reemplazo de la 9.6) 
+ - 9.56 Listado de tipo de archivos habilitados por id user(reemplazo de la 9.6) 
     - Metodo: get
     - Autorizacion: si tiene (token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/tipoArchivo/listadoTiposArchivosPorIdUser/402
     - Captura de ejemplo:
 
-
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/31080ced-0c37-40d1-9b77-3301b44c2ca5)
+
 
 
     - 9.57 Listado de tipo de archivos por historia clinica y id user(reemplazo de la 9.10 -> la primera) 
