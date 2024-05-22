@@ -1316,7 +1316,8 @@ Apis Medsoft Web
 
 
      - Captura de ejemplo:
-  
+
+
    - 10.2 Registrar historia clinica
     - Metodo: Post
     - Autorizacion: no tiene (sin token) 
