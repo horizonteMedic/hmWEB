@@ -1279,3 +1279,99 @@ Apis Medsoft Web
 
         ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/21f06186-b337-4472-b6f3-0160dbe24e8b)
 
+
+   - 10.1 Registrar datosm de paciente en la bd de pierola
+    - Metodo: Post
+    - Autorizacion: no tiene (sin token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/datosPacienteNP
+    - Json de ejemplo
+
+
+          {
+            "codPa":76574011,
+            "nombresPa":"JOSUE SPENCER",
+            "fechaNaciminetoPa": "1995-07-19",
+            "sexoPa": "M",
+            "emailPa": "josuespencerrojas@gmail.com",
+            "lugarNacPa": "TRUJILLO",
+            "nivelEstPa": "TITULADO",
+            "ocupacionPa": "ENFERMERA",
+            "estadoCivilPa": "SOLTERO",
+            "direccionPa": "MANCO CAPAC #641 V.A.",
+            "departamentoPa": "LA LIBERTAD",
+            "provinciaPa": "TRUJILLO",
+            "distritoPa": "VICTOR LARCO HERRERA",
+            "caserioPA": "-",
+            "fotoPa": null,
+            "codAleatorioPa": null,
+            "telCasaPa": null,
+            "telTrabajoPa": null,
+            "celPa": "942251815",
+            "fechaRegistroPa": "2024-05-21",
+            "apellidosPa": "ROJAS SIGÜENZA",
+            "horaRegistroPa": "20:29:02",
+            "tipoDoc": 1
+
+          }
+
+
+     - Captura de ejemplo:
+  
+   - 10.2 Registrar historia clinica
+    - Metodo: Post
+    - Autorizacion: no tiene (sin token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/historiaClinica
+    - Json de ejemplo
+
+
+          {
+             "n_orden":4353,
+              "codPa":76574022,
+              "razonEmpresa":"INVERDE PERU E.I.R.L.",
+              "razonContrata": "N/A",
+              "nomEx": "SUPERFICIE",
+              "alturaPo": "DEBAJO 2500",
+              "mineralPo": "NO APLICA",
+              "fechaAperturaPo": "2024-05-21",
+              "precioPo": "S/.130.00",
+              "estadoEx": "EN PROCESO",
+              "nomExamen":"PRE-OCUPACIONAL",
+              "cargoDe": "SOLDADOR",
+              "areaO": "OPERACIONES",
+              "n_medico": "ARTEMIO ALEJANDRO GARCIA CABRERA",
+              "n_hora": "10:35:37",
+              "tipoPago": "TRANSFERENCIA O DEPOSITO",
+              "n_fisttest": false,
+              "n_psicosen": false,
+              "n_testaltura": false,
+              "color": 30,
+              "grupoSan": null,
+              "grupoFactorSan": null,
+              "codClinica": "4353-H",
+              "visualCompl": false,
+              "trabCalientes": false,
+              "chk_covid1": false,
+              "chk_covid2": false,
+              "manipAlimentos": false,
+              "textObserv1": "ROTOCOLO COPEINCA- LORE",
+              "textObserv2": "COORDINADO CON LEONARDO",
+              "codSede": 2,
+              "tipoPruebaCovid": "RA",
+              "tipoPrueba": "N/A",
+              "nombreHotel": "N/A",
+              "protocolo": "Protocolo",
+              "precioAdic": "S/.1.00",
+              "autoriza": "CORREO DE EMPRESA",
+              "n_operacion": null,
+              "herraManuales": false,
+              "rxcDorsoLumbar": false,
+              "rxcKLumbar": false,
+              "rxcLumbosacra": false,
+              "rxcPlomos": false,
+              "mercurioo": false,
+              "referencia": "4353"
+
+          }
+
+
+     - Captura de ejemplo:
