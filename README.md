@@ -416,6 +416,7 @@ Apis Medsoft Web
 
           "nombreSede":"Trujillo - Santo dominguito",
           "codigoSede": "T-SD",
+          "capacidadPaciente":40,
           "estado": true,
           "fechaRegistro": "2024-04-19",
           "userRegistro": "developer",
@@ -435,6 +436,7 @@ Apis Medsoft Web
 
           "nombreSede":"Trujillo - Santo dominguito",
           "codigoSede": "T-SD",
+          "capacidadPaciente":40,
           "estado": true,
           "fechaRegistro": "2024-04-19",
           "userRegistro": "developer",
@@ -464,6 +466,7 @@ Apis Medsoft Web
 
           "nombreSede":"Trujillo - Santo dominguito",
           "codigoSede": "T-SD",
+          "capacidadPaciente":40,
           "estado": true,
           "fechaRegistro": "2024-04-19",
           "userRegistro": "developer",
@@ -730,6 +733,7 @@ Apis Medsoft Web
 
             "nombre":"Menu de configuraciones",
             "descripcion":"listado de configuraciones del sistemas que solo tiene acceso el administradpr",
+            "rutaVista":"la ruta del frontend para la vista",
             "estado": true,
             "nivel":1,
             "idPadre":null,
@@ -772,6 +776,7 @@ Apis Medsoft Web
           {
 
             "nombre":"Menu de configuraciones",
+            "rutaVista":"la ruta del frontend para la vista",
             "descripcion":"listado de configuraciones del sistemas que solo tiene acceso el administrador, actualizado",
             "estado": true,
             "nivel":1,
