@@ -1381,3 +1381,33 @@ Apis Medsoft Web
 
 
      - Captura de ejemplo:
+
+
+ - 10.3 Servicio de carga masiva
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/cargaMasivaHM
+    - Json de ejemplo
+
+
+          {
+              "rutaArchivo": null,
+              "nombreArchivo":"82985-EMA-VILLANUEVA CUBAS JOSE ELADIO.pdf",
+              "codigoSede":"T-NP",
+              "dni":null,
+              "historiaClinica":null,
+              "orden": null,
+              "servidor":"azure",
+              "estado": true,
+             "fechaRegistro": "2024-05-29",
+             "userRegistro": "developer",
+             "fechaActualizacion": null,
+             "userActualizacion": null,
+             "id_tipo_archivo": null,
+             "fileBase64": ""
+          }
+
+
+     - Captura de ejemplo:
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b2bb2609-cdcf-481d-b5a6-e137c5bd436b)
