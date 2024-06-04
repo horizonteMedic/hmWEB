@@ -1411,3 +1411,62 @@ Apis Medsoft Web
      - Captura de ejemplo:
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b2bb2609-cdcf-481d-b5a6-e137c5bd436b)
+
+
+
+ - 11 Registrar servicio
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicios
+    - Json de ejemplo
+
+
+          {
+            "nombreServicio":"Triaje",
+            "tablaServicio":"triaje_ocupacional",
+            "money": "12.5",
+            "estado": true
+          }
+
+
+     - Captura de ejemplo:
+
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/7eee058a-01af-4d29-9248-791d75878c1d)
+
+
+ - 11.1 Listar todos los servicio
+    - Metodo: GET
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicios
+
+ - 11.2 Listar los servicios por id
+    - Metodo: GET
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicios/3
+
+ - 11.3 Eliminar los servicios por id
+    - Metodo: DELETE
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicios/3
+
+
+ - 11.4 Actualizar servicio
+    - Metodo: Put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicios/3
+    - Json de ejemplo
+
+
+          {
+            "nombreServicio":"Triaje",
+            "tablaServicio":"triaje_ocupacional",
+            "money": "15",
+            "estado": false
+          }
+
+
+     - Captura de ejemplo:
+
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/7488e35c-8ffd-45fb-947a-b2f8d1a0c6d7)
+
+
