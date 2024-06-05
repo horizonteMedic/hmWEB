@@ -1470,3 +1470,22 @@ Apis Medsoft Web
    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/7488e35c-8ffd-45fb-947a-b2f8d1a0c6d7)
 
 
+ - 11.5 Matriz Administrativa
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/matrizAdministrativa
+    - Json de ejemplo
+
+
+          {
+            "rucContrata":"20602703119",
+            "rucEmpresa": "",
+             "fechaInicio": "2024-04-01",
+            "fechaFinal": "2024-05-31",
+            "sede": "T-NP"
+          }
+
+
+     - Captura de ejemplo:
+
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/0c1b71a1-9d3b-492d-9e32-4e33f728a5d7)
