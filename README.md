@@ -1425,7 +1425,11 @@ Apis Medsoft Web
             "nombreServicio":"Triaje",
             "tablaServicio":"triaje_ocupacional",
             "money": "12.5",
-            "estado": true
+            "estado": true,
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
           }
 
 
@@ -1460,8 +1464,12 @@ Apis Medsoft Web
           {
             "nombreServicio":"Triaje",
             "tablaServicio":"triaje_ocupacional",
-            "money": "15",
-            "estado": false
+            "money": "12.5",
+            "estado": true,
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
           }
 
 
@@ -1510,3 +1518,200 @@ Apis Medsoft Web
 
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f9146ca8-8361-4ada-9fb6-d43d6046fed5)
 
+ - 12.1  Registrar Protocolos 
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos
+    - Json de ejemplo
+
+
+          {
+            "nombreProtocolo":"Protocolo boro",
+            "rucEmpresa":23456789876,
+            "precio": "20.5",
+            "observacion": "sin observaciones",
+            "estado": true,
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/2fa38e8c-c5d5-4c23-bf8d-3bb12dfe1562)
+
+
+ - 12.2   Listar Protocolos 
+    - Metodo: Get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos
+    - Captura de ejemplo:      
+
+    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/10e6b725-7528-4f19-94d1-a60624d55dd6)
+
+ - 12.3   Listar Protocolos por id protocolo
+    - Metodo: Get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos/52
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/062eeb37-57e8-40f3-abcc-380e8b49642c)
+
+ - 12.4   Eliminar Protocolos por id protocolo
+    - Metodo: Delete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos/52
+    - Captura de ejemplo:
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/201afd24-b634-4326-8ec8-9c648d92dce0)
+
+
+ - 12.5  Actualizar Protocolos 
+    - Metodo: put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos/52
+    - Json de ejemplo
+
+
+          {
+            "nombreProtocolo":"Protocolo boro",
+            "rucEmpresa":23456789876,
+            "precio": "20.5",
+            "observacion": "sin observaciones",
+            "estado": true,
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
+ - 12.6  Registrar Contrata Protocolo 
+    - Metodo: post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos
+    - Json de ejemplo
+
+
+          {
+            "id_protocolo": 2,
+            "rucContrata": 26545676431,
+            "precio": "20.5",
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/caa4be8d-c2d2-4286-80e3-c773331a0ede)
+
+ - 12.7  Listar Contrata Protocolo 
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f931727d-78b6-4a9e-aaff-90439afddcdd)
+
+ - 12.8  Listar Contrata Protocolo 
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos/2
+    - Captura de ejemplo:
+  
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/87006469-04c8-4e89-b881-eff3c01eea7e)
+
+
+ - 12.9  Actualizar Contrata Protocolo 
+    - Metodo: put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos/2
+    - Json de ejemplo
+
+
+          {
+            "id_protocolo": 2,
+            "rucContrata": 26545676431,
+            "precio": "20.5",
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+  
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/22dd0830-48fc-4c1b-8b25-42a842cf61d2)
+
+ - 12.10  Eliminar Contrata Protocolo 
+    - Metodo: delete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos/2
+    - Captura de ejemplo:
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/593562d7-d478-47b9-8def-23da1ccf060f)
+
+ - 12.11  Registrar servicio Protocolo 
+    - Metodo: post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos
+    - Json de ejemplo
+
+
+          {
+            "id_protocolo": 2,
+            "id_servicio": 152,
+            "precio": "20.5",
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
+        ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/6c89b4d9-6254-4387-8229-0f2e9719ef53)
+
+
+ - 12.12  listar servicio Protocolo 
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos
+    - Captura de ejemplo:
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c407bb30-d29f-4782-82e4-d184b82ade21)
+
+ - 12.13  listar servicio Protocolo por id protocolo
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos/2
+    - Captura de ejemplo:
+
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/85212aeb-0906-44e1-b6cb-eef6b34202a5)
+
+ - 12.14  actualizar servicio Protocolo 
+    - Metodo: put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos/2
+    - Json de ejemplo
+
+
+          {
+            "id_protocolo": 2,
+            "id_servicio": 152,
+            "precio": "20.5",
+            "fechaRegistro": "2024-06-10",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+  ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/caeb75f4-e10b-4000-8f58-f04b08ad20e9)
+
+ - 12.15  Eliminar servicio Protocolo por id protocolo
+    - Metodo: deete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos/2
+    - Captura de ejemplo:
