@@ -1424,7 +1424,7 @@ Apis Medsoft Web
           {
             "nombreServicio":"Triaje",
             "tablaServicio":"triaje_ocupacional",
-            "money": "12.5",
+            "precio": 12.5,
             "estado": true,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
@@ -1464,7 +1464,7 @@ Apis Medsoft Web
           {
             "nombreServicio":"Triaje",
             "tablaServicio":"triaje_ocupacional",
-            "money": "12.5",
+            "precio": 12.5,
             "estado": true,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
@@ -1528,7 +1528,7 @@ Apis Medsoft Web
           {
             "nombreProtocolo":"Protocolo boro",
             "rucEmpresa":23456789876,
-            "precio": "20.5",
+            "precio": 20.5,
             "observacion": "sin observaciones",
             "estado": true,
             "fechaRegistro": "2024-06-10",
@@ -1576,7 +1576,7 @@ Apis Medsoft Web
           {
             "nombreProtocolo":"Protocolo boro",
             "rucEmpresa":23456789876,
-            "precio": "20.5",
+            "precio": 20.5,
             "observacion": "sin observaciones",
             "estado": true,
             "fechaRegistro": "2024-06-10",
@@ -1597,7 +1597,7 @@ Apis Medsoft Web
           {
             "id_protocolo": 2,
             "rucContrata": 26545676431,
-            "precio": "20.5",
+            "precio": 20.5,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
             "fechaActualizacion": null,
@@ -1635,7 +1635,7 @@ Apis Medsoft Web
           {
             "id_protocolo": 2,
             "rucContrata": 26545676431,
-            "precio": "20.5",
+            "precio": 20.5,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
             "fechaActualizacion": null,
@@ -1663,7 +1663,7 @@ Apis Medsoft Web
           {
             "id_protocolo": 2,
             "id_servicio": 152,
-            "precio": "20.5",
+            "precio": 20.5,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
             "fechaActualizacion": null,
@@ -1700,7 +1700,7 @@ Apis Medsoft Web
           {
             "id_protocolo": 2,
             "id_servicio": 152,
-            "precio": "20.5",
+            "precio": 20.5,
             "fechaRegistro": "2024-06-10",
             "userRegistro": "developer",
             "fechaActualizacion": null,
