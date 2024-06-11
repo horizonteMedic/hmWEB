@@ -1750,3 +1750,5 @@ Apis Medsoft Web
           }
 
     - Captura de ejemplo:
+
+![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c7a5cfab-d247-402b-b356-a2484f6567ea)
