@@ -1715,3 +1715,38 @@ Apis Medsoft Web
     - Autorizacion: si tiene (si token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos/2
     - Captura de ejemplo:
+
+ - 12.16  Registro de datos pacientes multiSucursales 
+    - Metodo: post
+    - Autorizacion: si tiene (si token) -> parametros -> {T-SD,T-NP,HNCY,HMCH}
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/registroPacientes/datosPaciente/T-SD
+    - Json de ejemplo
+
+
+          {
+              "codPa": 76574023,
+              "nombresPa": "JOSUE SPENCER",
+              "fechaNaciminetoPa": "1995-07-19",
+              "sexoPa": "F",
+              "emailPa": "josuespencerrojas@gmail.com",
+              "lugarNacPa": "TRUJILLO",
+              "nivelEstPa": "TITULADO",
+              "ocupacionPa": "ENFERMERA",
+              "estadoCivilPa": "SOLTERO",
+              "direccionPa": "MANCO CAPAC #641 V.A.",
+              "departamentoPa": "LA LIBERTAD",
+              "provinciaPa": "TRUJILLO",
+              "distritoPa": "VICTOR LARCO HERRERA",
+              "caserioPA": "-",
+              "fotoPa": null,
+              "codAleatorioPa": null,
+              "telCasaPa": null,
+              "telTrabajoPa": null,
+              "celPa": "942251815",
+              "fechaRegistroPa": "2024-05-21",
+              "apellidosPa": "ROJAS SIGÜENZA",
+              "horaRegistroPa": "20:29:02",
+              "tipoDoc": 1
+          }
+
+    - Captura de ejemplo:
