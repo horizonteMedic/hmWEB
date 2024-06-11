@@ -1760,3 +1760,28 @@ Apis Medsoft Web
     - Captura de ejemplo:
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/a2cb9567-79eb-4400-bc62-e0eb96b69d10)
+
+ - 12.18  buscar protocolo por nombre del protocolo
+    - Metodo: deete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/protocolos/busquedaPorName/PROTOCOLO PRUEBA 01
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/52fea148-26c0-4d04-935a-a8f270f12837)
+
+ - 12.19  listar contratas asignadas a un protocolo por id protocolo
+    - Metodo: deete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/contrataProtocolos/busquedaIdProtocolo/152
+    - Captura de ejemplo:
+
+     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/9136bdbe-6575-417e-806d-43a836bbdda6)
+
+ - 12.20  listar servicios asignadas a un protocolo por id protocolo
+    - Metodo: deete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/servicioProtocolos/busquedaPorIdProtocolo/152
+    - Captura de ejemplo:
+  
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f8b82970-9cab-4b57-a50a-de87c6c22e6c)
+
