@@ -1785,3 +1785,65 @@ Apis Medsoft Web
   
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f8b82970-9cab-4b57-a50a-de87c6c22e6c)
 
+
+ - 12.21  Registrar citas ocupacionales
+    - Metodo: post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional
+    - Json de ejemplo
+
+
+          {
+            "dni": 76574022,
+            "fechaReserva": "2024-06-30",
+            "nomenSede": "T-NP",
+            "rucEmpresa": 20477167561,
+            "rucContrata": 20602352111,
+            "fechaRegistro": "2024-06-11",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
+
+ - 12.22  litar citas ocupacionales
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional
+    - Json de ejemplo
+
+ - 12.23  litar citas ocupacionales por id
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional/1
+    - Json de ejemplo
+
+ - 12.24  eliminar citas ocupacionales por id
+    - Metodo: delete
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional/1
+    - Json de ejemplo
+
+ - 12.25  Actualizar citas ocupacionales por id
+    - Metodo: put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional/1
+    - Json de ejemplo
+
+
+          {
+            "dni": 76574022,
+            "fechaReserva": "2024-06-30",
+            "nomenSede": "T-NP",
+            "rucEmpresa": 20477167561,
+            "rucContrata": 20602352111,
+            "fechaRegistro": "2024-06-11",
+            "userRegistro": "developer",
+            "fechaActualizacion": null,
+            "userActualizacion": null
+          }
+
+    - Captura de ejemplo:
+
