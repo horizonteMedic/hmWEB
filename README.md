@@ -1847,3 +1847,118 @@ Apis Medsoft Web
 
     - Captura de ejemplo:
 
+
+ - 12.26  litado de formas de pagos
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/detalleParametros/detalleParametrizable/Formas de pago
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b6d6291e-3ec6-4557-9763-ad44a2cbc532)
+
+
+
+ - 12.27  litado de Autorizacion
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/detalleParametros/detalleParametrizable/Autorizacion
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/223f0f2f-f15a-4469-8934-8b314bd2df15)
+
+
+ - 12.28  litado de EMPRESAS MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoEmpresasMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/35c6f705-acc6-4789-8c2d-ad619f62d1f5)
+
+
+ - 12.29  litado de CONTRATAS MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoContratasMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/98271af2-0e9c-4fd3-98fa-ad830747d1c8)
+
+
+ - 12.30  litado de NOMBRE DE LOS  MEDICOS OCUPACIONAL  MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoNombreMedicosMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c663957a-ad87-40b1-893c-919f4f1fffd0)
+
+
+ - 12.31  litado de TIPO DE PRUEBA MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoTipoPruebaMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/e06ee499-33d4-4887-92fc-e2d2147789fc)
+
+
+ - 12.32  litado de CARGO MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoCargoMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/5093be25-54b6-4dca-98f9-34addb89aa16)
+
+
+ - 12.33  litado de AREA MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoAreaMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/37ca12a3-80d5-476f-8a44-c37f9b1697bc)
+
+
+ - 12.34  litado de TIPO DE EXAMEN MEDICO MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoTipoExamenMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ffae1e49-d7d7-42a3-bb1e-87de3812088f)
+
+ - 12.35  litado de EXPLOTACION MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoExplotacionMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/be241e5c-8a73-4284-a4da-daf99c8ee21d)
+
+
+ - 12.36  litado de mineral MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoMineralMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ac3976e6-4920-405d-bbdc-d25ceee9861e)
+
+
+ - 12.37  litado de altura MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoAlturaMutisucursal/T-SD
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/db980a7c-97b0-4a47-a4df-c43e1a18ba29)
+
+
+ - 12.38  PRECIO EXAMEN MEDICO MULTISUCURSAL
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/PrecioExamenMutisucursal/T-SD/ANUAL
+    - Captura de ejemplo
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/94b6c84f-f630-4031-8240-97d1bb5d5ade)
