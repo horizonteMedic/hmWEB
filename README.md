@@ -1962,3 +1962,66 @@ Apis Medsoft Web
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/PrecioExamenMutisucursal/T-SD/ANUAL
     - Captura de ejemplo
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/94b6c84f-f630-4031-8240-97d1bb5d5ade)
+
+
+
+ - 12.39  Registrar o actualizar historia clinica ocupacional
+    - Metodo: put
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/registroPacientes/historiaClinicaOcupacional
+    - Json de ejemplo
+
+
+          {
+              "tipoOperacion":1,
+              "n_orden":null,
+              "codPa":76574012,
+              "razonEmpresa":"INVERDE PERU E.I.R.L.",
+              "razonContrata": "N/A",
+              "nomEx": "SUPERFICIE",
+              "alturaPo": "DEBAJO 2500",
+              "mineralPo": "NO APLICA",
+              "fechaAperturaPo": "2024-05-23",
+              "precioPo": "S/.130.00",
+              "estadoEx": "EN PROCESO",
+              "nomExamen":"PRE-OCUPACIONAL",
+              "cargoDe": "SOLDADOR",
+              "areaO": "OPERACIONES",
+              "n_medico": "ARTEMIO ALEJANDRO GARCIA CABRERA",
+              "n_hora": "10:35:37",
+              "tipoPago": "TRANSFERENCIA O DEPOSITO",
+              "n_fisttest": false,
+              "n_psicosen": false,
+              "n_testaltura": false,
+              "color": 30,
+              "grupoSan": null,
+              "grupoFactorSan": null,
+              "codClinica": "4353-H",
+              "visualCompl": false,
+              "trabCalientes": false,
+              "chk_covid1": false,
+              "chk_covid2": false,
+              "manipAlimentos": false,
+              "textObserv1": "ROTOCOLO COPEINCA- LORE",
+              "textObserv2": "PRUEBAS, REGISTRO A ELIMINAR POR EL AREA DE DEVELOPERS",
+              "codSede": "T-NP",
+              "tipoPruebaCovid": "RA",
+              "tipoPrueba": "N/A",
+              "nombreHotel": "N/A",
+              "protocolo": "Protocolo",
+              "precioAdic": "S/.1.00",
+              "autoriza": "CORREO DE EMPRESA",
+              "n_operacion": null,
+              "herraManuales": false,
+              "rxcDorsoLumbar": false,
+              "rxcKLumbar": false,
+              "rxcLumbosacra": false,
+              "rxcPlomos": false,
+              "mercurioo": false
+      
+          }
+
+    - Captura de ejemplo:
+          ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b01ef662-acde-40ee-92f8-35bb029c7400)
+
+      
