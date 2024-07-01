@@ -1,4 +1,4 @@
-Apis Medsoft Web
+![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f7f7ee62-a18e-4b77-941f-7696613a1318)Apis Medsoft Web
 
 1- Empleado
   - 1.1. Registro de Empleados
@@ -2025,3 +2025,18 @@ Apis Medsoft Web
           ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b01ef662-acde-40ee-92f8-35bb029c7400)
 
       
+ - 12.40 Matriz de archivos 
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos
+    - Captura de ejemplo
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/28608799-7d8a-4db1-aba1-e5fb0892b554)
+
+ - 12.41 listado de historias ocupacionales por sede
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/listadoHistorialOcupacional/T-NP
+    - Captura de ejemplo
+  
+   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/09f8ad92-d22f-492d-a894-78b2b9747d5f)
