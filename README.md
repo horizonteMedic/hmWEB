@@ -2040,3 +2040,12 @@
     - Captura de ejemplo
   
    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/09f8ad92-d22f-492d-a894-78b2b9747d5f)
+
+
+ - 12.42 listado de reserva por username
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/listadoReserva/developer
+    - Captura de ejemplo
+  
+  ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c84ca918-e0db-4094-8d6b-c86fc9c5c193)
