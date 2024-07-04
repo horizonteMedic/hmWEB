@@ -1795,6 +1795,7 @@
 
           {
             "dni": 76574022,
+            "celular": 942251815,
             "fechaReserva": "2024-06-30",
             "nomenSede": "T-NP",
             "rucEmpresa": 20477167561,
@@ -1835,6 +1836,7 @@
 
           {
             "dni": 76574022,
+            "celular": 942251815,
             "fechaReserva": "2024-06-30",
             "nomenSede": "T-NP",
             "rucEmpresa": 20477167561,
@@ -2049,3 +2051,21 @@
     - Captura de ejemplo
   
   ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/c84ca918-e0db-4094-8d6b-c86fc9c5c193)
+
+
+  
+ - 12.43  Listar detalle de reserva por filtros
+    - Metodo: post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/ocupacional/citaOcupacional/detalleReserva
+    - Json de ejemplo
+
+
+          {
+            "nombreSede": "T-NP",
+            "fechaReserva": "2024-06-30",
+            "nombreUser": "developer"
+          }
+
+    - Captura de ejemplo:
+![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b83ee24c-67ef-4868-b170-3799626a0926)
