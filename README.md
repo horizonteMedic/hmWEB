@@ -2069,3 +2069,34 @@
 
     - Captura de ejemplo:
 ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b83ee24c-67ef-4868-b170-3799626a0926)
+
+
+  
+ - 13.1  Registrar o actualizar documentos digitales de empleados
+    - Metodo: post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/registrarEmpleado
+    - Json de ejemplo
+
+
+          {
+             "ruta": null,
+             "nombreArchivo":"firma.jpg",
+             "dni":76574022,
+             "extension": ".jpg",
+             "tipoArchivo":"FIRMA",
+             "base64": ""
+          }
+
+    - Captura de ejemplo:
+
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/ff8cf83f-6659-465b-b715-cbf7bb11e7d2)
+
+
+ - 13.2 listado documentos digitales de los empleados
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/detalleArchivoEmpleado/76574022/FIRMA
+    - Captura de ejemplo
+  
+      ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/0e142125-d9d3-456c-816c-b7873e87ef66)
