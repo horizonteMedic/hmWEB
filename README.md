@@ -1746,7 +1746,10 @@
               "fechaRegistroPa": "2024-05-21",
               "apellidosPa": "ROJAS SIGÜENZA",
               "horaRegistroPa": "20:29:02",
-              "tipoDoc": 1
+              "tipoDoc": 1,
+              "cargo": "operador",
+              "area": "operaciones",
+              "tipoExamen": "pre-ocupacional"
           }
 
     - Captura de ejemplo:
@@ -1803,7 +1806,10 @@
             "fechaRegistro": "2024-06-11",
             "userRegistro": "developer",
             "fechaActualizacion": null,
-            "userActualizacion": null
+            "userActualizacion": null,
+            "cargo": "operador",
+            "area": "operaciones",
+            "tipoExamen": "pre-ocupacional"
           }
 
     - Captura de ejemplo:
