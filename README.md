@@ -2106,3 +2106,9 @@
     - Captura de ejemplo
   
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/0e142125-d9d3-456c-816c-b7873e87ef66)
+
+ - 13.3 consulta de reserva por dni
+    - Metodo: get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/consultaReserva/76574030
+    - Captura de ejemplo
