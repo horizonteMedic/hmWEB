@@ -2112,3 +2112,9 @@
     - Autorizacion: si tiene (si token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/consultaReserva/76574030
     - Captura de ejemplo
+
+ - 13.4 consumo de servicio reniec sin token
+    - Metodo: get
+    - Autorizacion: no tiene (no tiene token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/consumoApis/76574022
+    - Captura de ejemplo
