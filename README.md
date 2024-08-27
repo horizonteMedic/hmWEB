@@ -2118,3 +2118,16 @@
     - Autorizacion: no tiene (no tiene token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/consumoApis/76574022
     - Captura de ejemplo
+
+-  13.5 Carga masiva cie10
+    - Metodo: post
+    - Autorizacion: no tiene (sin token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/cie10
+    - Json de ejemplo
+
+
+          {
+             "codigo": "A0000",
+             "descripcion":"descripcion de prueba"
+
+          }
