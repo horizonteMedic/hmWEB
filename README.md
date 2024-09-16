@@ -1024,8 +1024,8 @@
  - 9.38 Listar de empresas o contratas por el username (listar)
     - Metodo: get
     - Autorizacion: Si tiene (token)
-    - Link: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/{username}/{EMPRESA O CONTRATA}
-    - LINK: https://servicios-web-hm.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/developer/EMPRESA
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/{username}/{EMPRESA O CONTRATA}
+    - LINK: https://hmintegracion.azurewebsites.net/api/v01/ct/sistemaArchivos/busquedaEmpresaContrata/developer/EMPRESA
     - Captura de ejemplo
 
    ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/31ad7621-8079-49b1-8705-f974973db491)
