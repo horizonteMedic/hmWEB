@@ -1404,6 +1404,7 @@
              "fechaActualizacion": null,
              "userActualizacion": null,
              "id_tipo_archivo": null,
+              "nomenclatura_tipo_archivo": null,
              "fileBase64": ""
           }
 
