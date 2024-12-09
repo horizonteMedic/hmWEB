@@ -1405,6 +1405,7 @@
              "userActualizacion": null,
              "id_tipo_archivo": null,
               "nomenclatura_tipo_archivo": null,
+              "indice_carga_masiva":1013,
              "fileBase64": ""
           }
 
@@ -1413,6 +1414,21 @@
 
     ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/b2bb2609-cdcf-481d-b5a6-e137c5bd436b)
 
+ - 10.4 Registrar indice de carga masiva
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/respBack/registrarIndiceCargaMasiva
+    - Json de ejemplo
+
+
+          {
+
+             "fechaRegistro": "2024-05-29",
+             "userRegistro": "developer",
+             "horaRegistro": "1:00 am",
+             "cantidadArchivos": 25
+      
+          }
 
 
  - 11 Registrar servicio
