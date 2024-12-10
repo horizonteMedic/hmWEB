@@ -1430,6 +1430,15 @@
       
           }
 
+ - 10.5 Listado de archivos subidos en marca masiva por indice 
+    - Metodo: Get
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/listadoArchivosCargaMasivaPorIndice/1027
+    - Captura de ejemplo:
+
+    ![image](https://github.com/user-attachments/assets/0c7e4b2b-20c1-4631-b0a5-5e9cb761d569)
+
+
 
  - 11 Registrar servicio
     - Metodo: Post
