@@ -1430,7 +1430,7 @@
       
           }
 
- - 10.5 Listado de archivos subidos en marca masiva por indice 
+ - 10.5 Listado de archivos subidos en carca masiva por indice 
     - Metodo: Get
     - Autorizacion: si tiene (si token) 
     - Link: https://hmintegracion.azurewebsites.net/api/v01/ct/archivos/listadoArchivosCargaMasivaPorIndice/1027
