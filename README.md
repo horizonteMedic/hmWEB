@@ -1544,6 +1544,43 @@
 
       ![image](https://github.com/horizonteMedic/hmWEB/assets/72226346/f9146ca8-8361-4ada-9fb6-d43d6046fed5)
 
+
+ - 11.7 Matriz Administrativa OHLA
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/matrizAdministrativaOhla
+    - Json de ejemplo
+
+
+          {
+            "rucContrata":"20602703119",
+            "rucEmpresa": "",
+             "fechaInicio": "2024-04-01",
+            "fechaFinal": "2024-05-31",
+            "sede": "T-NP"
+          }
+
+
+     - Captura de ejemplo:
+  
+    - 11.8 Matriz SALUD OHLA
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/matrizSaludOhla
+    - Json de ejemplo
+
+
+          {
+            "rucContrata":"20602703119",
+            "rucEmpresa": "",
+             "fechaInicio": "2024-04-01",
+            "fechaFinal": "2024-05-31",
+            "sede": "T-NP"
+          }
+
+
+     - Captura de ejemplo:
+
  - 12.1  Registrar Protocolos 
     - Metodo: Post
     - Autorizacion: si tiene (si token) 
