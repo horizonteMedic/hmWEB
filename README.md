@@ -1581,6 +1581,25 @@
 
      - Captura de ejemplo:
 
+    - 11.9 Matriz general
+    - Metodo: Post
+    - Autorizacion: si tiene (si token) 
+    - Link: https://hmintegracion.azurewebsites.net/api/v01/st/registros/matrizGeneral
+    - Json de ejemplo
+
+
+          {
+            "rucContrata":"20602703119",
+            "rucEmpresa": "",
+             "fechaInicio": "2024-04-01",
+            "fechaFinal": "2024-05-31",
+            "sede": "T-NP"
+          }
+
+
+     - Captura de ejemplo:
+       
+
  - 12.1  Registrar Protocolos 
     - Metodo: Post
     - Autorizacion: si tiene (si token) 
